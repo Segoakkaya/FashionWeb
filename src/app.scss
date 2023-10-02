@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+//node modules
+@import '@node_modules/bootstrap/scss/bootstrap';
+@import '@node_modules/owl.carousel/dist/assets/owl.carousel.min.css';
+
+//functions
+@import '@functions/_breakpoints';
+@import '@functions/_mixins';
+
+//base
+@import '@base/_base';
+@import '@base/_typography';
+@import '@base/_fonts';
+@import '@base/_colors';
+@import '@base/_icons';
+
+//atoms
+@import '@atoms/_buttons';
+@import '@atoms/_inputs';
+
+//pages
+@import './scss/style';
+
+//organisms
+@import '@organisms/_header';
+@import '@organisms/_footer';
+@import '@organisms/_mobilemenu';
+
+//pages
+@import '@pages/_index';

@@ -1,0 +1,282 @@
+.homepage {
+    &-title {
+        margin-left: 150px;
+
+        &_one {
+            color: $color--Bgreen;
+            @extend .ff--Rufina;
+            font-size: 86px;
+            @extend .font-weight--bold;
+            width: 649px;
+            height: 318px;
+        }
+
+        &_two {
+            color: $color--Dgreen;
+            @extend .ff--Poppins;
+            font-size: 24px;
+            @extend .font-weight--500;
+            line-height: 220%;
+            width: 565px;
+            height: 159px;
+        }
+
+        &-btn {
+            font-size: 18px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            padding: 25px 60px;
+            @extend .ff--Poppins;
+            font-size: 20px;
+            @extend .font-weight--500;
+            border: 2px solid $color--Bgreen;
+            background-color: $color--Bgreen;
+            border-radius: 2px;
+            position: relative;
+            box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 0.4);
+            color: white;
+            text-decoration: none;
+            transition: 0.3s ease all;
+            z-index: 1;
+          
+          a {
+                text-decoration: none;
+                color: white;
+                background-color: transparent;
+            }
+          &:before {
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: '';
+            background-color: $color--Lgreen;
+            z-index: -1;
+          }
+          
+          &:hover ,&:focus {
+            color: white;
+          }
+          
+          &:hover:before, &:focus:before {
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+          }
+          
+          &:active {
+            transform: scale(0.9);
+          }
+        }
+    }
+}
+
+.content {
+    &-title {
+        padding-bottom: 100px;
+        position: relative;
+        &-img {
+            height: 650px;
+            background-color: $color--Lgreen;
+            border-radius: 150px 50px 150px 50px;
+        }
+        &-circle1{
+            position: absolute;
+            top: 475px;
+            right: 535px;             
+        }
+        &-circle{
+            position: absolute;
+            top: 80px;
+            right: 190px;
+        }
+    }
+}
+
+.bestpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+
+    p {
+        color: $color--Bgreen;
+        font-size: 64px;
+        @extend .ff--Roboto;
+        @extend .font-weight--500;
+        font-style: normal;
+        line-height: normal;
+    }
+
+    &-title {
+        color: #224F34;
+        @extend .ff--Poppins;
+        font-size: 22px;
+        font-style: normal;
+        @extend .font-weight--500;
+        line-height: normal;
+    }
+}
+
+.card {
+    margin-top: 20px;
+    border-radius: 0px;
+    border: none;
+
+    &-img {
+        background-color: $color--Wgreen;
+        border-radius: 0px;
+    }
+
+    &-title {
+        color: #373737;
+        text-align: center;
+        @extend .ff--Poppins;
+        font-size: 22px;
+        font-style: normal;
+        @extend .font-weight--600;
+        line-height: normal;
+
+        &-cash {
+            color: #454545;
+            @extend .ff--Poppins;
+            font-size: 22px;
+            font-style: normal;
+            @extend .font-weight--500;
+            line-height: normal;
+            border-right: 1px solid rgba($color: #000000, $alpha: 0.5);
+            padding-right: 20px;
+        }
+
+        &-populer {
+            color: #454545;
+            @extend .ff--Poppins;
+            font-size: 22px;
+            font-style: normal;
+            @extend .font-weight--500;
+            line-height: normal;
+            padding-left: 20px;
+        }
+    }
+}
+
+.seeallBtn {
+    display: inline-flex;
+    padding: 16px 55px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 3px;
+    border: 2px solid #224F34;
+    transition: 0.5s all;
+
+    a {
+        text-decoration: none;
+        color: #224F34;
+        @extend .ff--Poppins;
+        font-size: 22px;
+        font-style: normal;
+        @extend .font-weight--500;
+        line-height: normal;
+    }
+
+    &:hover {
+        background-color: #224F34;
+
+        a {
+            color: white;
+        }
+
+        i {
+            color: white;
+        }
+    }
+}
+
+.myCarousel {
+    width: 380px;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    .owl-nav{
+        font-size: 40px;
+        color: $color--Dgreen;
+        display: flex;
+        justify-content: space-between;
+        margin-top: -80px;
+    }
+}
+
+@media (max-width:1366px) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .homepage {
+        &-title {
+            margin-left: 0px;
+            &_one {
+                width: 400px;
+                height: 400px;
+            }
+
+            &_two {
+                width: 400px;
+                height: 200px;
+            }
+            &-btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+
+    .content-title {
+        &-img {
+            width: 400px;
+            height: 500px;
+        }
+        &-circle1{
+            top: 40px;
+            right: 45px;
+            width: 80px;
+            height: 80px;
+            
+        }
+        &-circle{
+            top: 335px;
+            left: 35px;
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .cards {
+        display: none;
+    }
+    .seeallBtn{
+     margin-top: 250px;   
+    }
+    .myCarousel {
+        display: block;
+        margin-left: 20px;
+    }
+}
+
+@include media-breakpoint-down(def) {}

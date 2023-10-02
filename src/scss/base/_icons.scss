@@ -1,0 +1,51 @@
+@mixin svg($name, $width, $height) {
+  width: $width;
+	height: $height;
+  background-image: url('assets/images/svg/#{$name}.svg');
+}
+
+@mixin extend-icon($name, $size, $color)
+{
+   @extend [class^="icon-"];
+   @extend [class*=" icon-"];
+   @extend .#{$name}:before;
+   color:$color;
+   font-size: $size;
+}
+
+[class^="svg-"], [class*=" svg-"] {
+  background-size: contain;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Line-2:before {
+  content: "\e901";
+}
+.icon-fi-ss-star:before {
+  content: "\e900";
+  color: #f5d426;
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}

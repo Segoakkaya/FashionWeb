@@ -1,0 +1,128 @@
+.header{
+    background-color: $color--Wgreen;
+    color: $color--Dgreen;
+    height: 100px;
+    @extend .ff--Poppins;
+    padding-top: 25px;
+    text-decoration: none;
+        &_logo{
+            @extend .font-weight--800;
+            color: $color--Bgreen;
+            text-decoration: none;
+            font-size: 40px;
+        }
+        &_list{
+            list-style: none;
+            li{
+                font-size: 22px;
+                padding-top: 16px;
+                padding-left: 20px;
+                a{
+                    color: $color--Bgreen;
+                    text-decoration: none;
+                }
+                &::after{
+                    margin-top: 5px;
+                    content: '';
+                    width: 0%;
+                    height: 2px;
+                    background: $color--Bgreen;
+                    display: block;
+                    transition: 0.5s;
+                  }
+                  
+                  &:hover::after{
+                    width: 100%;
+                  }
+            }
+        }
+        &_title{
+            padding-top: 17px;
+            &_icon{
+                width: 32px;
+                height: 32px;
+                margin-right: 20px;
+            }
+            &_loginBtn{
+                color: $color--Bgreen;
+                text-decoration: none;
+                border: 1px solid $color--Dgreen;
+                border-radius: 5px;
+                font-size: 20px;
+                padding: 13px 46px;
+            }
+        }
+    }
+    .sepet-menu {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: right 0.3s ease;
+        background-color: $color--Wgreen;
+        padding: 20px;
+        z-index: 9999;
+        &-header{
+            @extend .ff--Poppins;
+            @extend .font-weight--500;
+            border-bottom:2px solid $color--Dgreen;
+            &-title{
+                color: $color--Bgreen;
+                text-decoration: none;
+                font-size: 30px;
+    
+            }
+            &-btn{
+                border: none;
+                color: $color--Bgreen;
+                text-decoration: none;
+                font-size: 30px;
+                background-color: transparent;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    .navbar{
+        @extend .ff--Poppins;
+        display: none;
+        background-color: $color--Wgreen;
+        &-brand{
+            color: $color--Dgreen;
+            text-decoration: none;
+            font-size: 40px;
+            @extend .font-weight--800;
+        }
+        &-toggler{
+            color: $color--Dgreen;
+            text-decoration: none;
+            font-size: 30px;
+            border: none;
+        }
+        .navbar-nav .nav-link{
+            color: $color--green;
+            text-decoration: none;
+            @extend .font-weight--500;
+        }
+        .navbar-nav .nav-link.active{
+            font-size: 22px;
+            color: $color--Dgreen;
+            text-decoration: none;
+        }
+    }
+    
+    @media (max-width:1366px) { }
+    @include media-breakpoint-down(lg)  {
+     }
+    @include media-breakpoint-down(md)  {
+        .navbar{
+            display: block;
+        }
+        header{
+            display: none !important;
+        }
+     }
+    @include media-breakpoint-down(sm)  { }
+    @include media-breakpoint-down(def) { }
