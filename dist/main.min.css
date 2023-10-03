@@ -15378,7 +15378,7 @@ table {
   font-weight: 499 !important;
 }
 
-.font-weight--500, .products-card-title-populer, .products-card-title-cash, .seeallBtn a, .card-title-populer, .card-title-cash, .bestpage-title, .bestpage p, .homepage-title-btn, .homepage-title_two, .navbar .navbar-nav .nav-link, .sepet-menu-header {
+.font-weight--500, .product_nav_item a, .product_title, .products-card-title-populer, .products-card-title-cash, .seeallBtn a, .card-title-populer, .card-title-cash, .bestpage-title, .bestpage p, .homepage-title-btn, .homepage-title_two, .navbar .navbar-nav .nav-link, .sepet-menu-header {
   font-weight: 500 !important;
 }
 
@@ -16990,7 +16990,7 @@ table {
   font-weight: normal;
 }
 
-.ff--Poppins, .products-card-title-populer, .products-card-title-cash, .products-card-title, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .navbar, .sepet-menu-header, .header {
+.ff--Poppins, .product_nav_item a, .products-card-title-populer, .products-card-title-cash, .products-card-title, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .navbar, .sepet-menu-header, .header {
   font-family: Poppins;
 }
 
@@ -16998,7 +16998,7 @@ table {
   font-family: Rufina;
 }
 
-.ff--Roboto, .bestpage p {
+.ff--Roboto, .product_title, .bestpage p {
   font-family: Roboto;
 }
 
@@ -18397,6 +18397,39 @@ html {
   font-style: normal;
   line-height: normal;
   padding-left: 20px;
+}
+
+.product {
+  margin-top: 100px;
+}
+.product_title {
+  color: #224F34;
+  font-size: 64px;
+  font-style: normal;
+  line-height: normal;
+}
+.product_nav_item a {
+  text-decoration: none;
+  color: #454545;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.product_nav_item::after {
+  margin-top: 5px;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #224F34;
+  display: block;
+  transition: 0.5s;
+}
+.product_nav_item:hover:after {
+  width: 100%;
+}
+.product_nav_item:hover a {
+  color: #224F34;
 }
 
 .coutdown-menu {

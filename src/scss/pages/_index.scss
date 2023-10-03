@@ -265,8 +265,49 @@
         }
     }
 }
-
-
+.product{
+    margin-top: 100px;
+    &_title{
+        color: $color--Bgreen;
+        font-size: 64px;
+        @extend .ff--Roboto;
+        @extend .font-weight--500;
+        font-style: normal;
+        line-height: normal;
+    }
+    &_nav{
+        &_item{
+            a{
+                text-decoration: none;
+                color: #454545;
+                @extend .ff--Poppins;
+                font-size: 22px;
+                font-style: normal;
+                @extend .font-weight--500;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+                &::after{
+                    margin-top: 5px;
+                    content: '';
+                    width: 0%;
+                    height: 2px;
+                    background: $color--Bgreen;
+                    display: block;
+                    transition: 0.5s;
+                  }
+                  
+                  &:hover:after{
+                    width: 100%;
+                  }
+                  &:hover{
+                    a{
+                    color: $color--Bgreen;
+                    }
+                  }
+        }
+    }
+}
 .coutdown-menu{
     background-color: $color--Wgreen;
     max-width: 1377px;
