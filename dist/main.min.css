@@ -15378,7 +15378,7 @@ table {
   font-weight: 499 !important;
 }
 
-.font-weight--500, .product_nav_item a, .product_title, .products-card-title-populer, .products-card-title-cash, .seeallBtn a, .card-title-populer, .card-title-cash, .bestpage-title, .bestpage p, .homepage-title-btn, .homepage-title_two, .navbar .navbar-nav .nav-link, .sepet-menu-header {
+.font-weight--500, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpage_card-title-populer, .hotpage_card-title-cash, .product_nav_item a, .product_title, .seeallBtn a, .card-title-populer, .card-title-cash, .bestpage-title, .bestpage p, .homepage-title-btn, .homepage-title_two, .navbar .navbar-nav .nav-link, .sepet-menu-header {
   font-weight: 500 !important;
 }
 
@@ -15778,7 +15778,7 @@ table {
   font-weight: 599 !important;
 }
 
-.font-weight--600, .products-card-title, .card-title {
+.font-weight--600, .hotpageCarousel_card-title, .hotpage_card-title, .card-title {
   font-weight: 600 !important;
 }
 
@@ -16990,7 +16990,7 @@ table {
   font-weight: normal;
 }
 
-.ff--Poppins, .product_nav_item a, .products-card-title-populer, .products-card-title-cash, .products-card-title, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .navbar, .sepet-menu-header, .header {
+.ff--Poppins, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpageCarousel_card-title, .hotpage_card-title-populer, .hotpage_card-title-cash, .hotpage_card-title, .product_nav_item a, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .navbar, .sepet-menu-header, .header {
   font-family: Poppins;
 }
 
@@ -18360,45 +18360,6 @@ html {
   margin-top: -80px;
 }
 
-.products-card {
-  border-radius: 0px;
-  border: none;
-  width: 318px;
-  height: 378px;
-}
-.products-card-img {
-  display: flex;
-  justify-content: center;
-  border-radius: 0px;
-  background-color: #e6e6ee;
-}
-.products-card-img img {
-  width: 318px;
-  height: 378px;
-}
-.products-card-title {
-  color: #373737;
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  line-height: normal;
-}
-.products-card-title-cash {
-  color: #454545;
-  font-size: 15px;
-  font-style: normal;
-  line-height: normal;
-  border-right: 1px solid rgba(0, 0, 0, 0.5);
-  padding-right: 20px;
-}
-.products-card-title-populer {
-  color: #454545;
-  font-size: 15px;
-  font-style: normal;
-  line-height: normal;
-  padding-left: 20px;
-}
-
 .product {
   margin-top: 100px;
 }
@@ -18415,6 +18376,7 @@ html {
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
+  margin: 20px;
 }
 .product_nav_item::after {
   margin-top: 5px;
@@ -18430,6 +18392,60 @@ html {
 }
 .product_nav_item:hover a {
   color: #224F34;
+}
+
+.hotpage_card {
+  width: 318px;
+  height: 378px;
+}
+.hotpage_card-title {
+  color: #373737;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+}
+.hotpage_card-title-cash {
+  color: #454545;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  padding-right: 20px;
+}
+.hotpage_card-title-populer {
+  color: #454545;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+  padding-left: 20px;
+}
+
+.hotpageCarousel_card-title {
+  color: #373737;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+}
+.hotpageCarousel_card-title-cash {
+  color: #454545;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  padding-right: 20px;
+}
+.hotpageCarousel_card-title-populer {
+  color: #454545;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+  padding-left: 20px;
+}
+
+.hotpageCarousel {
+  display: none;
 }
 
 .coutdown-menu {
@@ -18486,5 +18502,25 @@ html {
   .myCarousel {
     display: block;
     margin: auto;
+  }
+  .product ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .product ul li {
+    padding: 0px;
+  }
+  .hotpage {
+    display: none;
+  }
+  .hotpageCarousel {
+    display: block;
+  }
+  .hotpageCarousel_item {
+    width: 50%;
+  }
+  .hotpageCarousel .owl-nav {
+    display: none;
   }
 }
