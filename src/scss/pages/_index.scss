@@ -91,12 +91,12 @@
         &-circle1{
             position: absolute;
             top: 475px;
-            right: 535px;             
+            right: 580px;             
         }
         &-circle{
             position: absolute;
             top: 80px;
-            right: 190px;
+            right: 225px;
         }
     }
 }
@@ -219,6 +219,62 @@
     }
 }
 
+.products-card{
+    border-radius: 0px;
+    border: none;
+    width: 318px;
+    height: 378px;
+    &-img {
+        display: flex;
+        justify-content: center;
+        border-radius: 0px;
+        background-color: $color--Lgrey;
+        img{
+            width: 318px;
+            height: 378px;
+        }
+    }
+    &-title {
+        color: #373737;
+        text-align: center;
+        @extend .ff--Poppins;
+        font-size: 18px;
+        font-style: normal;
+        @extend .font-weight--600;
+        line-height: normal;
+
+        &-cash {
+            color: #454545;
+            @extend .ff--Poppins;
+            font-size:15px;
+            font-style: normal;
+            @extend .font-weight--500;
+            line-height: normal;
+            border-right: 1px solid rgba($color: #000000, $alpha: 0.5);
+            padding-right: 20px;
+        }
+
+        &-populer {
+            color: #454545;
+            @extend .ff--Poppins;
+            font-size: 15px;
+            font-style: normal;
+            @extend .font-weight--500;
+            line-height: normal;
+            padding-left: 20px;
+        }
+    }
+}
+
+
+.coutdown-menu{
+    background-color: $color--Wgreen;
+    max-width: 1377px;
+    width: 100%;
+    height: 596px;
+    margin-top: 100px;
+    padding: 40px;
+}
 @media (max-width:1366px) {}
 
 @include media-breakpoint-down(lg) {}
@@ -275,7 +331,7 @@
     }
     .myCarousel {
         display: block;
-        margin-left: 20px;
+        margin: auto;
     }
 }
 

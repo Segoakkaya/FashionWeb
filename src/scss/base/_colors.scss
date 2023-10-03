@@ -6,6 +6,7 @@ $color--Fgreen              :#10FF70;
 $color--green               :#267144;
 $color--Dgreen              :#267D49;
 $color--Bgreen              :#224F34;
+$color--Lgrey               :#e6e6ee;
 
 .color--white               { color: $color--white!important; }
 .bg--white                  { background-color: $color--white!important; }
@@ -38,3 +39,8 @@ $color--Bgreen              :#224F34;
 .color--Bgreen               { color: $color--Bgreen!important; }
 .bg--Bgreen                  { background-color: $color--Bgreen!important; }
 .br--Bgreen                  { border-color: $color--Bgreen!important; }
+
+
+.color--Lgrey               { color: $color--Lgrey!important; }
+.bg--Lgrey                  { background-color: $color--Lgrey!important; }
+.br--Lgrey                  { border-color: $color--Lgrey!important; }
