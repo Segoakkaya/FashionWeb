@@ -3,7 +3,57 @@
     var script = {};
     script.version = '1.0.0';
 
-    script.app = { 
+    script.app = {
+        coutdown: function(){
+            // Getting formated date from date string
+            let deadline = new Date("nov 12, 2023 12:00:00").getTime();
+  
+          // Calling defined function at certain interval
+          let x = setInterval(function () {
+  
+              // Getting current date and time in required format
+              let now = new Date().getTime();
+  
+              // Calculating difference
+              let t = deadline - now;
+  
+              // Getting values of days,hours,minutes, seconds
+              let days = Math.floor(
+                  t / (1000 * 60 * 60 * 24)
+              );
+              let hours = Math.floor(
+                  (t % (1000 * 60 * 60 * 24)) /
+                      (1000 * 60 * 60)
+              );
+              let minutes = Math.floor(
+                  (t % (1000 * 60 * 60)) / (1000 * 60)
+              );
+  
+              // Show the output time
+              document.getElementById("day")
+                      .innerHTML = days;
+              document.getElementById("hour")
+                      .innerHTML = hours;
+              document.getElementById("minute")
+                      .innerHTML = minutes;
+              // Show overtime output
+              if (t < 0) {
+                  clearInterval(x);
+                  document.getElementById(
+                      "timer"
+                  ).innerHTML = "TIME UP";
+                  document.getElementById(
+                      "day"
+                  ).innerHTML = "0";
+                  document.getElementById(
+                      "hour"
+                  ).innerHTML = "0";
+                  document.getElementById(
+                      "minute"
+                  ).innerHTML = "0";
+              }
+          }, 1000);
+      },
         isMobile: function () {
             var e = !1;
             (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(
@@ -188,19 +238,19 @@
                     }
                 }
             })
-            $('.hotpageCarousel').owlCarousel({
+            $('.hotpageC').owlCarousel({
                 margin:10,
-                nav:false,
-                dots:false,
+                nav:true,
+                dots:true,
                 responsive:{
                     0:{
-                        items:2
+                        items:3
                     },
                     600:{
-                        items:2
+                        items:3
                     },
                     1000:{
-                        items:2
+                        items:3
                     }
                 }
             })
@@ -264,6 +314,9 @@
 
 })(jQuery);
 
+$(document).ready(function () {
+    script.app.coutdown();
+  });
 $(document).ready(function () {
     var library = new Script();
     Script.init();
