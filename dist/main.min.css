@@ -15378,7 +15378,7 @@ table {
   font-weight: 499 !important;
 }
 
-.font-weight--500, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpage_card-title-populer, .hotpage_card-title-cash, .product_nav_item a, .product_title, .seeallBtn a, .card-title-populer, .card-title-cash, .bestpage-title, .bestpage p, .homepage-title-btn, .homepage-title_two, .navbar .navbar-nav .nav-link, .sepet-menu-header {
+.font-weight--500, .designer-img-title-small, .designer_title_small, .designer_title, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpage_card-title-populer, .hotpage_card-title-cash, .product_nav_item a, .product_title, .seeallBtn a, .card-title-populer, .card-title-cash, .bestpage-title, .bestpage p, .homepage-title-btn, .homepage-title_two, .navbar .navbar-nav .nav-link, .sepet-menu-header {
   font-weight: 500 !important;
 }
 
@@ -15778,7 +15778,7 @@ table {
   font-weight: 599 !important;
 }
 
-.font-weight--600, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .hotpageCarousel_card-title, .hotpage_card-title, .card-title {
+.font-weight--600, .designer-img-title, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .hotpageCarousel_card-title, .hotpage_card-title, .card-title {
   font-weight: 600 !important;
 }
 
@@ -16990,7 +16990,7 @@ table {
   font-weight: normal;
 }
 
-.ff--Poppins, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpageCarousel_card-title, .hotpage_card-title-populer, .hotpage_card-title-cash, .hotpage_card-title, .product_nav_item a, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .navbar, .sepet-menu-header, .header {
+.ff--Poppins, .designer-img-title-small, .designer-img-title, .designer_title_small, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpageCarousel_card-title, .hotpage_card-title-populer, .hotpage_card-title-cash, .hotpage_card-title, .product_nav_item a, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .navbar, .sepet-menu-header, .header {
   font-family: Poppins;
 }
 
@@ -16998,7 +16998,7 @@ table {
   font-family: Rufina;
 }
 
-.ff--Roboto, .coutdown-menu-title_baslik, .product_title, .bestpage p {
+.ff--Roboto, .designer_title, .coutdown-menu-title_baslik, .product_title, .bestpage p {
   font-family: Roboto;
 }
 
@@ -18184,15 +18184,13 @@ html {
 .homepage-title_one {
   color: #224F34;
   font-size: 86px;
-  width: 649px;
-  height: 318px;
+  max-width: 90%;
 }
 .homepage-title_two {
   color: #267D49;
   font-size: 24px;
   line-height: 220%;
-  width: 565px;
-  height: 159px;
+  max-width: 70%;
 }
 .homepage-title-btn {
   font-size: 18px;
@@ -18246,22 +18244,14 @@ html {
 
 .content-title {
   padding-bottom: 100px;
-  position: relative;
 }
 .content-title-img {
-  height: 650px;
+  max-width: 100%;
   background-color: #6BC785;
   border-radius: 150px 50px 150px 50px;
 }
-.content-title-circle1 {
-  position: absolute;
-  top: 475px;
-  right: 580px;
-}
-.content-title-circle {
-  position: absolute;
-  top: 80px;
-  right: 225px;
+.content-title-img img {
+  max-width: 95%;
 }
 
 .bestpage {
@@ -18293,6 +18283,9 @@ html {
 .card-img {
   background-color: #C2EFD4;
   border-radius: 0px;
+}
+.card-img img {
+  max-width: 100%;
 }
 .card-title {
   color: #373737;
@@ -18360,7 +18353,7 @@ html {
   margin-top: 0px;
 }
 .myCarousel .item {
-  width: 360px;
+  width: 400px;
 }
 
 .product {
@@ -18407,8 +18400,7 @@ html {
   align-items: center;
 }
 .hotpage_card-img img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
   background-color: #e6e6ee;
 }
 .hotpage_card-title {
@@ -18608,18 +18600,42 @@ html {
   transform: scale(0.9);
 }
 
-@media (max-width: 991.96px) {
+.designer_title {
+  color: #224F34;
+  font-size: 50px;
+  font-style: normal;
+  line-height: normal;
+}
+.designer_title_small {
+  color: #224F34;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+}
+.designer-img img {
+  max-width: 100%;
+}
+.designer-img-title {
+  color: #373737;
+  font-size: 30px;
+  font-style: normal;
+  line-height: normal;
+}
+.designer-img-title-small {
+  width: 420px;
+  height: 93px;
+  color: #373737;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 143%;
+}
+
+@media (max-width: 1199.96px) {
   .homepage-title {
     margin-left: 0px;
   }
   .homepage-title_one {
-    width: 360px;
-    height: 300px;
     font-size: 70px;
-  }
-  .homepage-title_two {
-    width: 360px;
-    height: 200px;
   }
   .homepage-title-btn {
     display: flex;
@@ -18627,9 +18643,10 @@ html {
     align-items: center;
     text-align: center;
   }
-  .content-title-img {
-    width: 360px;
-    height: 500px;
+}
+@media (max-width: 991.96px) {
+  .card-img {
+    width: 300px;
   }
   .coutdown-menu {
     height: auto;
