@@ -15378,7 +15378,7 @@ table {
   font-weight: 499 !important;
 }
 
-.font-weight--500, .designer-img-title-small, .designer_title_small, .designer_title, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpage_card-title-populer, .hotpage_card-title-cash, .product_nav_item a, .product_title, .seeallBtn a, .card-title-populer, .card-title-cash, .bestpage-title, .bestpage p, .homepage-title-btn, .homepage-title_two, .navbar .navbar-nav .nav-link, .sepet-menu-header {
+.font-weight--500, .feedback-carousel-content-title2, .feedback-carousel-content-title, .feedback-title, .designer-img-title-small, .designer_title_small, .designer_title, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpage_card-title-populer, .hotpage_card-title-cash, .product_nav_item a, .product_title, .seeallBtn a, .card-title-populer, .card-title-cash, .bestpage-title, .bestpage p, .homepage-title-btn, .homepage-title_two, .navbar .navbar-nav .nav-link, .sepet-menu-header {
   font-weight: 500 !important;
 }
 
@@ -16990,7 +16990,7 @@ table {
   font-weight: normal;
 }
 
-.ff--Poppins, .designer-img-title-small, .designer-img-title, .designer_title_small, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpageCarousel_card-title, .hotpage_card-title-populer, .hotpage_card-title-cash, .hotpage_card-title, .product_nav_item a, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .navbar, .sepet-menu-header, .header {
+.ff--Poppins, .feedback-carousel-content-title2, .designer-img-title-small, .designer-img-title, .designer_title_small, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpageCarousel_card-title, .hotpage_card-title-populer, .hotpage_card-title-cash, .hotpage_card-title, .product_nav_item a, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .navbar, .sepet-menu-header, .header {
   font-family: Poppins;
 }
 
@@ -16998,7 +16998,7 @@ table {
   font-family: Rufina;
 }
 
-.ff--Roboto, .designer_title, .coutdown-menu-title_baslik, .product_title, .bestpage p {
+.ff--Roboto, .feedback-carousel-content-title, .feedback-title, .designer_title, .coutdown-menu-title_baslik, .product_title, .bestpage p {
   font-family: Roboto;
 }
 
@@ -18600,6 +18600,10 @@ html {
   transform: scale(0.9);
 }
 
+.clother {
+  margin: 200px;
+}
+
 .designer_title {
   color: #224F34;
   font-size: 50px;
@@ -18628,6 +18632,33 @@ html {
   font-size: 22px;
   font-style: normal;
   line-height: 143%;
+}
+
+.feedback-title {
+  color: #224F34;
+  font-size: 50px;
+}
+.feedback-carousel-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  max-width: 434px;
+  width: 100%;
+  height: 253px;
+  background-color: slategray;
+}
+.feedback-carousel-content-img {
+  width: 28px;
+  height: 69px;
+}
+.feedback-carousel-content-title {
+  color: #224F34;
+  font-size: 22px;
+}
+.feedback-carousel-content-title2 {
+  color: #224F34;
+  font-size: 16px;
 }
 
 @media (max-width: 1199.96px) {
@@ -18676,6 +18707,15 @@ html {
   .coutdown-menu-btn {
     width: 90%;
   }
+  .clother {
+    margin: 50px;
+  }
+  .designer-img-title {
+    font-size: 25px;
+  }
+  .designer-img-title-small {
+    font-size: 20px;
+  }
 }
 @media (max-width: 767.96px) {
   .cards {
@@ -18704,5 +18744,11 @@ html {
   }
   .hotpageCarousel_item {
     width: 50%;
+  }
+  .designer-img-title {
+    font-size: 20px;
+  }
+  .designer-img-title-small {
+    font-size: 15px;
   }
 }

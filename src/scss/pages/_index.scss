@@ -543,6 +543,9 @@
         }
     }
 }
+.clother{
+    margin: 200px;
+}
 .designer{
     &_title{
         color: #224F34;
@@ -584,6 +587,42 @@
         }
     }
 }
+.feedback{
+    &-title{
+        @extend .ff--Roboto;
+        @extend .font-weight--500;
+        color: $color--Bgreen;
+        font-size: 50px;
+    }
+    &-carousel{
+        &-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            max-width: 434px;
+            width: 100%;
+            height: 253px;
+            background-color:slategray;
+            &-img{
+                width: 28px;
+                height: 69px
+            }
+            &-title{
+                @extend .ff--Roboto;
+                @extend .font-weight--500;
+                color: $color--Bgreen;
+                font-size: 22px;
+            }
+            &-title2{
+                @extend .ff--Poppins;
+                @extend .font-weight--500;
+                color: $color--Bgreen;
+                font-size: 16px;
+            }
+        }
+    }
+}
 @media (max-width:1366px) {}
 
 @include media-breakpoint-down(lg) {
@@ -596,10 +635,6 @@
                 font-size: 70px;
             }
 
-            &_two {
-                
-            }
-
             &-btn {
                 display: flex;
                 justify-content: center;
@@ -607,10 +642,6 @@
                 text-align: center;
             }
         }
-    }
-
-    .content-title {
-        
     }
     
 }
@@ -656,8 +687,20 @@
             width: 90%;
         }
     }
+    .clother{
+        margin:50px;
+    }
+    .designer{
+        &-img{
+            &-title{
+                font-size: 25px;
+                &-small{
+                    font-size: 20px;
+                }
+            }
 
-    
+        }
+    }
 }
 
 @include media-breakpoint-down(sm) {
@@ -697,6 +740,17 @@
         }
 
         display: block;
+    }
+    .designer{
+        &-img{
+            &-title{
+                font-size: 20px;
+                &-small{
+                    font-size: 15px;
+                }
+            }
+
+        }
     }
 }
 
