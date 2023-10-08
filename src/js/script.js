@@ -222,7 +222,7 @@
                 sepetMenu.style.right = '-300px'; // Menüyü tekrar gizler
             });
 
-            $('.owl-carousel').owlCarousel({
+            $('.myCarousel').owlCarousel({
                 loop:true,
                 margin:10,
                 nav:true,
@@ -254,16 +254,17 @@
                     }
                 }
             })
-            $('.Feedback-Carousel').owlCarousel({
+            $('.feedbackpage').owlCarousel({
+                loop:true,
                 margin:10,
                 nav:true,
                 dots:true,
                 responsive:{
                     0:{
-                        items:3
+                        items:1
                     },
                     600:{
-                        items:3
+                        items:2
                     },
                     1000:{
                         items:3

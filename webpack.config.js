@@ -92,6 +92,11 @@ module.exports = {
             location:'headerpartial',
             template_filename:['index.html']
           }),
+          new HtmlWebpackPluginPartials({
+            path: path.join(__dirname, './src/partials/_footer.html'),
+            location:'footerpartial',
+            template_filename:['index.html']
+          }),
     ],
     module: {
         rules: [

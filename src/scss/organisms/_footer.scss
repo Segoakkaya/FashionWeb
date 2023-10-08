@@ -1,3 +1,78 @@
+.footer{
+    background-color: $color--Dgreen;
+    height:599px;
+    color:white;
+    padding: 200px;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    &_menu1{
+        &-title{
+            @extend .ff--Poppins;
+            @extend .font-weight--500;
+            font-size: 50px;
+            padding-bottom:15px;
+            &_small{
+                @extend .ff--Roboto;
+            @extend .font-weight--500;
+            font-size: 22px;
+            }
+        }
+        &-icons{
+            margin-top: 20px;
+            width: 30%;
+            font-size: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &_menu2{
+        &-list{
+            @extend .ff--Roboto;
+            @extend .font-weight--500;
+            font-size: 22px;
+            &_item{
+                @extend .ff--Poppins;
+                @extend .font-weight--300;
+                font-size: 20px;
+                margin-top:15px;
+            }
+        }
+    }
+    &-menu3{
+       &_title{
+        @extend .ff--Roboto;
+        @extend .font-weight--500;
+        font-size: 22px;
+        padding-bottom: 30px;
+       }
+       .form-control{
+        border-radius: 0px;
+        &::placeholder{
+            color: white;
+        }
+       }
+       .btn{
+        font-size: 20px;
+        @extend .ff--Poppins;
+        @extend .font-weight--300;
+        border-radius: 0px;
+       }
+    }
+    &-menu4{
+        &-hr{
+            hr{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
 @media (max-width:1366px) { }
 @include media-breakpoint-down(lg)  { }
 @include media-breakpoint-down(md)  { }

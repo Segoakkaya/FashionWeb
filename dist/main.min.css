@@ -14578,7 +14578,7 @@ table {
   font-weight: 299 !important;
 }
 
-.font-weight--300 {
+.font-weight--300, .feedbackpage .item-title_small, .footer-menu3 .btn, .footer_menu2-list_item {
   font-weight: 300 !important;
 }
 
@@ -15378,7 +15378,7 @@ table {
   font-weight: 499 !important;
 }
 
-.font-weight--500, .feedback-carousel-content-title2, .feedback-carousel-content-title, .feedback-title, .designer-img-title-small, .designer_title_small, .designer_title, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpage_card-title-populer, .hotpage_card-title-cash, .product_nav_item a, .product_title, .seeallBtn a, .card-title-populer, .card-title-cash, .bestpage-title, .bestpage p, .homepage-title-btn, .homepage-title_two, .navbar .navbar-nav .nav-link, .sepet-menu-header {
+.font-weight--500, .feedbackpage .item-title, .feedback-title, .designer-img-title-small, .designer_title_small, .designer_title, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpage_card-title-populer, .hotpage_card-title-cash, .product_nav_item a, .product_title, .seeallBtn a, .card-title-populer, .card-title-cash, .bestpage-title, .bestpage p, .homepage-title-btn, .homepage-title_two, .footer-menu3_title, .footer_menu2-list, .footer_menu1-title_small, .footer_menu1-title, .navbar .navbar-nav .nav-link, .sepet-menu-header {
   font-weight: 500 !important;
 }
 
@@ -16990,7 +16990,7 @@ table {
   font-weight: normal;
 }
 
-.ff--Poppins, .feedback-carousel-content-title2, .designer-img-title-small, .designer-img-title, .designer_title_small, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpageCarousel_card-title, .hotpage_card-title-populer, .hotpage_card-title-cash, .hotpage_card-title, .product_nav_item a, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .navbar, .sepet-menu-header, .header {
+.ff--Poppins, .feedbackpage .item-title_small, .designer-img-title-small, .designer-img-title, .designer_title_small, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpageCarousel_card-title, .hotpage_card-title-populer, .hotpage_card-title-cash, .hotpage_card-title, .product_nav_item a, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .footer-menu3 .btn, .footer_menu2-list_item, .footer_menu1-title, .navbar, .sepet-menu-header, .header {
   font-family: Poppins;
 }
 
@@ -16998,7 +16998,7 @@ table {
   font-family: Rufina;
 }
 
-.ff--Roboto, .feedback-carousel-content-title, .feedback-title, .designer_title, .coutdown-menu-title_baslik, .product_title, .bestpage p {
+.ff--Roboto, .feedbackpage .item-title, .feedback-title, .designer_title, .coutdown-menu-title_baslik, .product_title, .bestpage p, .footer-menu3_title, .footer_menu2-list, .footer_menu1-title_small {
   font-family: Roboto;
 }
 
@@ -17516,6 +17516,56 @@ html {
     display: none !important;
   }
 }
+.footer {
+  background-color: #267D49;
+  height: 599px;
+  color: white;
+  padding: 200px;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer_menu1-title {
+  font-size: 50px;
+  padding-bottom: 15px;
+}
+.footer_menu1-title_small {
+  font-size: 22px;
+}
+.footer_menu1-icons {
+  margin-top: 20px;
+  width: 30%;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_menu2-list {
+  font-size: 22px;
+}
+.footer_menu2-list_item {
+  font-size: 20px;
+  margin-top: 15px;
+}
+.footer-menu3_title {
+  font-size: 22px;
+  padding-bottom: 30px;
+}
+.footer-menu3 .form-control {
+  border-radius: 0px;
+}
+.footer-menu3 .form-control::placeholder {
+  color: white;
+}
+.footer-menu3 .btn {
+  font-size: 20px;
+  border-radius: 0px;
+}
+.footer-menu4-hr hr {
+  max-width: 100%;
+}
+
 .mobile-menu-btn {
   width: 100%;
   max-width: 35px;
@@ -18635,30 +18685,32 @@ html {
 }
 
 .feedback-title {
-  color: #224F34;
   font-size: 50px;
+  color: #267D49;
 }
-.feedback-carousel-content {
+
+.feedbackpage {
+  padding: 120px;
+}
+.feedbackpage .item {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   max-width: 434px;
-  width: 100%;
+  margin: 20px;
   height: 253px;
-  background-color: slategray;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.4);
 }
-.feedback-carousel-content-img {
-  width: 28px;
-  height: 69px;
-}
-.feedback-carousel-content-title {
-  color: #224F34;
+.feedbackpage .item-title {
+  color: #267D49;
   font-size: 22px;
+  padding: 10px;
 }
-.feedback-carousel-content-title2 {
-  color: #224F34;
+.feedbackpage .item-title_small {
   font-size: 16px;
+  color: #6f6f6f;
+  padding: 10px;
 }
 
 @media (max-width: 1199.96px) {

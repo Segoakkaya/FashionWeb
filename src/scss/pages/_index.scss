@@ -587,38 +587,35 @@
         }
     }
 }
-.feedback{
-    &-title{
-        @extend .ff--Roboto;
-        @extend .font-weight--500;
-        color: $color--Bgreen;
-        font-size: 50px;
-    }
-    &-carousel{
-        &-content{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            max-width: 434px;
-            width: 100%;
-            height: 253px;
-            background-color:slategray;
-            &-img{
-                width: 28px;
-                height: 69px
-            }
-            &-title{
-                @extend .ff--Roboto;
-                @extend .font-weight--500;
-                color: $color--Bgreen;
-                font-size: 22px;
-            }
-            &-title2{
+.feedback-title{
+    @extend .ff--Roboto;
+    @extend .font-weight--500;
+    font-size: 50px;
+    color: $color--Dgreen;
+}
+.feedbackpage{
+    padding: 120px;
+    .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 434px;
+        margin: 20px;
+        height: 253px;
+        box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.4);
+        &-title{
+            color: $color--Dgreen;
+            @extend .ff--Roboto;
+            @extend .font-weight--500;
+            font-size: 22px;
+            padding:10px;
+            &_small{
                 @extend .ff--Poppins;
-                @extend .font-weight--500;
-                color: $color--Bgreen;
+                @extend .font-weight--300;
                 font-size: 16px;
+                color: #6f6f6f;
+                padding:10px;
             }
         }
     }
