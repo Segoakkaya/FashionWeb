@@ -14578,7 +14578,7 @@ table {
   font-weight: 299 !important;
 }
 
-.font-weight--300, .feedbackpage .item-title_small, .accordion-menu3 .btn, .accordion_menu2-list_item, .footer-menu3 .btn, .footer_menu2-list_item {
+.font-weight--300, .feedbackpage .item-title_small, .accordion-menu3 .btn, .accordion_menu2-list_item, .footer-border, .footer-menu3 .btn, .footer_menu2-list_item {
   font-weight: 300 !important;
 }
 
@@ -16990,7 +16990,7 @@ table {
   font-weight: normal;
 }
 
-.ff--Poppins, .feedbackpage .item-title_small, .designer-img-title-small, .designer-img-title, .designer_title_small, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpageCarousel_card-title, .hotpage_card-title-populer, .hotpage_card-title-cash, .hotpage_card-title, .product_nav_item a, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .accordion .form-control, .accordion-menu3 .btn, .accordion_menu2-list_item, .accordion_menu1-title, .footer-menu3 .btn, .footer-menu3 .form-control, .footer_menu2-list_item, .footer_menu1-title, .navbar, .sepet-menu-header, .header {
+.ff--Poppins, .feedbackpage .item-title_small, .designer-img-title-small, .designer-img-title, .designer_title_small, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpageCarousel_card-title, .hotpage_card-title-populer, .hotpage_card-title-cash, .hotpage_card-title, .product_nav_item a, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .accordion .form-control, .accordion-menu3 .btn, .accordion_menu2-list_item, .footer-border, .footer-menu3 .btn, .footer-menu3 .form-control, .footer_menu2-list_item, .navbar, .sepet-menu-header, .header {
   font-family: Poppins;
 }
 
@@ -17000,6 +17000,10 @@ table {
 
 .ff--Roboto, .feedbackpage .item-title, .feedbackpage .item_tt, .feedback-title, .designer_title, .coutdown-menu-title_baslik, .product_title, .bestpage p, .accordion-menu3_title, .accordion_menu2-list, .accordion_menu1-title_small, .footer-menu3_title, .footer_menu2-list, .footer_menu1-title_small {
   font-family: Roboto;
+}
+
+.ff--Elephant, .accordion_menu1-title, .footer_menu1-title, .navbar-brand, .header_logo {
+  font-family: Elephant;
 }
 
 @font-face {
@@ -17233,6 +17237,13 @@ table {
   font-weight: normal;
   font-style: normal;
   font-display: block;
+}
+@font-face {
+  font-family: "Elephant";
+  src: url(assets/fonts/subset-Elephant-Regular.woff2) format("woff2"), url(assets/fonts/subset-Elephant-Regular.woff) format("woff"), url(assets/fonts/subset-Elephant-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 .color--white {
   color: #FFFFFF !important;
@@ -17578,6 +17589,7 @@ html {
 .footer-border {
   margin-top: 150px;
   text-align: center;
+  font-size: 20px;
 }
 
 .accordion {

@@ -6,6 +6,7 @@
     padding-top: 25px;
     text-decoration: none;
         &_logo{
+            @extend .ff--Elephant;
             @extend .font-weight--800;
             color: $color--Bgreen;
             text-decoration: none;
@@ -94,6 +95,7 @@
             text-decoration: none;
             font-size: 40px;
             @extend .font-weight--800;
+            @extend .ff--Elephant;
         }
         &-toggler{
             color: $color--Dgreen;
