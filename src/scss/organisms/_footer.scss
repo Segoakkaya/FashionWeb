@@ -57,19 +57,20 @@
         }
 
         .form-control {
-        border-radius: 0px;
-        
-        @extend .ff--Poppins;
-        @extend .font-weight--500;
-        &::placeholder {
-            color: $color--Wgreen;
-        }
+            border-radius: 0px;
 
-        &:focus {
-            box-shadow: 0 0 0 0.25rem rgba(194, 239, 212, 0.2) !important;
-        }
+            @extend .ff--Poppins;
+            @extend .font-weight--500;
 
-    }
+            &::placeholder {
+                color: $color--Wgreen;
+            }
+
+            &:focus {
+                box-shadow: 0 0 0 0.25rem rgba(194, 239, 212, 0.2) !important;
+            }
+
+        }
 
         .btn {
             font-size: 20px;
@@ -91,8 +92,8 @@
         margin-top: 150px;
         text-align: center;
         font-size: 20px;
-            @extend .ff--Poppins;
-            @extend .font-weight--300;
+        @extend .ff--Poppins;
+        @extend .font-weight--300;
     }
 }
 
@@ -100,9 +101,11 @@
     width: 100%;
     display: none;
     background-color: $color--Dgreen;
-    &-item{
+
+    &-item {
         border: none;
     }
+
     a {
         text-decoration: none;
         color: white;
@@ -112,11 +115,13 @@
         padding: 0px;
         margin: 0px;
         color: $color--Wgreen;
+
         &-title {
             color: white;
             @extend .ff--Elephant;
             @extend .font-weight--500;
             font-size: 50px;
+
             &_small {
                 margin: auto;
                 color: $color--Wgreen;
@@ -125,6 +130,7 @@
                 font-size: 22px;
             }
         }
+
         &-icons {
             margin: auto;
             color: $color--Wgreen;
@@ -142,6 +148,7 @@
             @extend .ff--Roboto;
             @extend .font-weight--500;
             font-size: 22px;
+
             &_item {
                 color: $color--Wgreen;
                 @extend .ff--Poppins;
@@ -185,6 +192,7 @@
         border-radius: 0px;
         @extend .ff--Poppins;
         @extend .font-weight--500;
+
         &::placeholder {
             color: $color--Wgreen;
         }
@@ -195,14 +203,15 @@
 
     }
 }
-.accordion-item:first-of-type .accordion-button{
+
+.accordion-item:first-of-type .accordion-button {
     border-radius: 0px;
 }
 
 @media (max-width:1366px) {}
 
 @include media-breakpoint-down(lg) {
-    .footer{
+    .footer {
         padding: 20px;
         padding-top: 200px;
     }
