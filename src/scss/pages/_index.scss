@@ -602,8 +602,16 @@
         align-items: flex-start;
         max-width: 434px;
         margin: 20px;
-        height: 253px;
+        height: 350px;
         box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        &_tt{
+            color: $color--Dgreen;
+            @extend .ff--Roboto;
+            @extend .font-weight--500;
+            font-size: 50px;
+            padding:5px;
+        }
         &-title{
             color: $color--Dgreen;
             @extend .ff--Roboto;

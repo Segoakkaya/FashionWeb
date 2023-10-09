@@ -1,12 +1,12 @@
 .footer {
-    background-color: $color--Dgreen;
+    background-color: $color--Bgreen;
     height: 599px;
     color: white;
     padding: 200px;
 
     a {
         text-decoration: none;
-        color: white;
+        color: $color--Wgreen;
     }
 
     &_menu1 {
@@ -25,8 +25,8 @@
 
         &-icons {
             margin-top: 20px;
-            width: 30%;
-            font-size: 25px;
+            width: 50%;
+            font-size: 35px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -57,12 +57,19 @@
         }
 
         .form-control {
-            border-radius: 0px;
-
-            &::placeholder {
-                color: white;
-            }
+        border-radius: 0px;
+        
+        @extend .ff--Poppins;
+        @extend .font-weight--500;
+        &::placeholder {
+            color: $color--Wgreen;
         }
+
+        &:focus {
+            box-shadow: 0 0 0 0.25rem rgba(194, 239, 212, 0.2) !important;
+        }
+
+    }
 
         .btn {
             font-size: 20px;
@@ -101,6 +108,7 @@
     &_menu1 {
         padding: 0px;
         margin: 0px;
+        color: $color--Wgreen;
         &-title {
             color: white;
             @extend .ff--Poppins;
@@ -108,7 +116,7 @@
             font-size: 50px;
             &_small {
                 margin: auto;
-                color: white;
+                color: $color--Wgreen;
                 @extend .ff--Roboto;
                 @extend .font-weight--500;
                 font-size: 22px;
@@ -116,7 +124,7 @@
         }
         &-icons {
             margin: auto;
-            color: white;
+            color: $color--Wgreen;
             width: 30%;
             font-size: 25px;
             display: flex;
@@ -127,12 +135,12 @@
 
     &_menu2 {
         &-list {
-            color: white;
+            color: $color--Wgreen;
             @extend .ff--Roboto;
             @extend .font-weight--500;
             font-size: 22px;
-
             &_item {
+                color: $color--Wgreen;
                 @extend .ff--Poppins;
                 @extend .font-weight--300;
                 font-size: 20px;
@@ -143,7 +151,7 @@
 
     &-menu3 {
         &_title {
-            color: white;
+            color: $color--Wgreen;
             @extend .ff--Roboto;
             @extend .font-weight--500;
             font-size: 22px;
@@ -172,9 +180,11 @@
 
     .form-control {
         border-radius: 0px;
-
+        
+        @extend .ff--Poppins;
+        @extend .font-weight--500;
         &::placeholder {
-            color: white;
+            color: $color--Wgreen;
         }
 
         &:focus {
