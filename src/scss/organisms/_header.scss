@@ -115,6 +115,15 @@
     
     @media (max-width:1366px) { }
     @include media-breakpoint-down(lg)  {
+        .header{
+            &_list{
+                li{
+            font-size: 20px;
+            padding-top: 16px;
+            padding-left: 15px;
+                }
+            }
+        }
      }
     @include media-breakpoint-down(md)  {
         .navbar{

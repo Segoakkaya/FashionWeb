@@ -430,7 +430,7 @@
             font-style: normal;
             @extend .font-weight--500;
             line-height: 167%;
-            width: 589px;
+            text-wrap: wrap;
         }
     }
 
@@ -594,7 +594,7 @@
     color: $color--Dgreen;
 }
 .feedbackpage{
-    padding: 120px;
+    padding: 100px;
     .item{
         display: flex;
         flex-direction: column;
@@ -616,6 +616,33 @@
                 font-size: 16px;
                 color: #6f6f6f;
                 padding:10px;
+            }
+        }
+    }
+    .owl-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .owl-prev{
+            font-size: 30px !important;
+            margin: 15px;
+            background: #FFF !important;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            &:active{
+                background-color: $color--Wgreen !important;
+            }
+        }
+        .owl-next{
+            font-size: 30px !important;
+            margin: 15px;
+            background: #FFF !important;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            &:active{
+                background-color: $color--Wgreen !important;
             }
         }
     }
@@ -681,7 +708,7 @@
         }
 
         &-btn {
-            width: 90%;
+            width: 100%;
         }
     }
     .clother{
