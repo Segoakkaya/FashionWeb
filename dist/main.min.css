@@ -18894,8 +18894,15 @@ body {
   }
 }
 @media (max-width: 991.96px) {
-  .card-img {
-    width: 300px;
+  .homepage-title_one {
+    margin-left: 65px !important;
+  }
+  .homepage-title_two {
+    margin-left: 65px !important;
+  }
+  .homepage-title-btn {
+    width: 70%;
+    margin: auto;
   }
   .coutdown-menu {
     height: auto;
@@ -18936,7 +18943,7 @@ body {
     display: none;
   }
   .seeallBtn {
-    margin-top: 250px;
+    margin-top: 300px;
   }
   .myCarousel {
     display: block;

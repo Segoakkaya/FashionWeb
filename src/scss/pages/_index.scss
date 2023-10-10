@@ -698,11 +698,18 @@
 
 
 @include media-breakpoint-down(md) {
-
-    .card-img {
-        width: 300px;
+    .homepage-title{
+        &_one{
+            margin-left: 65px !important;
+        }
+        &_two{
+            margin-left: 65px !important;            
+        }
     }
-
+    .homepage-title-btn{
+        width: 70%;
+        margin: auto;
+    }
     .coutdown-menu {
         height: auto;
         flex-direction: column;
@@ -754,7 +761,7 @@
     }
 
     .seeallBtn {
-        margin-top: 250px;
+        margin-top: 300px;
     }
 
     .myCarousel {
