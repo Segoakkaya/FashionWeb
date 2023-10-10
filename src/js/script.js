@@ -259,6 +259,8 @@
                 margin:10,
                 nav:true,
                 dots:true,
+                navContainer:".feedbackpage-Container",
+                navText:["ᐸ", "ᐳ"],
                 responsive:{
                     0:{
                         items:1

@@ -18802,6 +18802,7 @@ html {
 
 .feedbackpage {
   padding: 100px;
+  margin-left: 3rem;
 }
 .feedbackpage .item {
   display: flex;
@@ -18829,35 +18830,41 @@ html {
   color: #6f6f6f;
   padding: 10px;
 }
-.feedbackpage .owl-nav {
+
+.feedbackpage-Container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.feedbackpage .owl-nav .owl-prev {
+.feedbackpage-Container .owl-prev {
+  font-size: 30px !important;
+  border: none;
+  margin: 15px;
+  width: 50px;
+  height: 50px;
+  background: #FFF !important;
+  text-align: center;
+}
+.feedbackpage-Container .owl-prev:active {
+  background-color: #6BC785 !important;
+}
+.feedbackpage-Container .owl-next {
   font-size: 30px !important;
   margin: 15px;
   background: #FFF !important;
-  width: 32px;
-  height: 32px;
   text-align: center;
+  border: none;
+  width: 50px;
+  height: 50px;
 }
-.feedbackpage .owl-nav .owl-prev:active {
-  background-color: #C2EFD4 !important;
-}
-.feedbackpage .owl-nav .owl-next {
-  font-size: 30px !important;
-  margin: 15px;
-  background: #FFF !important;
-  width: 32px;
-  height: 32px;
-  text-align: center;
-}
-.feedbackpage .owl-nav .owl-next:active {
-  background-color: #C2EFD4 !important;
+.feedbackpage-Container .owl-next:active {
+  background-color: #6BC785 !important;
 }
 
 @media (max-width: 1199.96px) {
+  .feedbackpage {
+    margin-left: 0px;
+  }
   .homepage-title {
     margin-left: 0px;
   }
