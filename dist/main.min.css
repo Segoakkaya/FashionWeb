@@ -17411,6 +17411,10 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .header {
   background-color: #C2EFD4;
   color: #267D49;
