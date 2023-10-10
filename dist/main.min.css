@@ -18804,6 +18804,14 @@ body {
   color: #267D49;
 }
 
+.feedbackpage .owl-item.active.center .item {
+  transform: scale(1.05);
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  background: #6BC785;
+  color: #fff;
+}
+
 .feedbackpage {
   padding: 100px;
   margin-left: 3rem;
@@ -18848,6 +18856,7 @@ body {
   height: 50px;
   background: #FFF !important;
   text-align: center;
+  opacity: 0.5;
 }
 .feedbackpage-Container .owl-prev:active {
   background-color: #6BC785 !important;
@@ -18860,6 +18869,7 @@ body {
   border: none;
   width: 50px;
   height: 50px;
+  opacity: 0.5;
 }
 .feedbackpage-Container .owl-next:active {
   background-color: #6BC785 !important;

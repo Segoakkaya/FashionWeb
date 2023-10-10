@@ -591,7 +591,15 @@
     @extend .font-weight--500;
     font-size: 50px;
     color: $color--Dgreen;
+    
 }
+.feedbackpage .owl-item.active.center .item {
+    transform: scale(1.05);
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    background: $color--Lgreen;
+    color: #fff;
+  }
 .feedbackpage{
     padding: 100px;
     margin-left: 3rem;
@@ -640,6 +648,7 @@
             height: 50px;
             background: #FFF !important;
             text-align: center;
+            opacity: 0.5;
             &:active{
                 background-color: $color--Lgreen !important;
             }
@@ -652,11 +661,13 @@
             border: none;
             width: 50px;
             height: 50px;
+            opacity: 0.5;
             &:active{
                 background-color: $color--Lgreen !important;
             }
         }
 }
+
 @media (max-width:1366px) {
 }
 
