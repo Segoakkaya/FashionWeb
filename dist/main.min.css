@@ -18823,7 +18823,8 @@ body {
   align-items: flex-start;
   max-width: 434px;
   margin: 20px;
-  height: 350px;
+  max-height: 350px;
+  min-height: 300px;
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.4);
   padding: 20px;
 }
