@@ -18637,19 +18637,19 @@ body {
   margin-right: -60px;
   color: white !important;
   background: #267D49 !important;
-  width: 35px;
-  height: 35px;
   border-radius: 25px;
   text-align: center;
+  width: 50px;
+  height: 50px;
 }
 .hotpageCarousel .owl-nav .owl-prev {
   margin-left: -60px;
   color: white !important;
   background: #267D49 !important;
-  width: 35px;
-  height: 35px;
   border-radius: 25px;
   text-align: center;
+  width: 50px;
+  height: 50px;
 }
 
 .coutdown-menu {
@@ -18861,6 +18861,7 @@ body {
 }
 .feedbackpage-Container .owl-prev:active {
   background-color: #6BC785 !important;
+  opacity: 1;
 }
 .feedbackpage-Container .owl-next {
   font-size: 30px !important;
@@ -18874,6 +18875,7 @@ body {
 }
 .feedbackpage-Container .owl-next:active {
   background-color: #6BC785 !important;
+  opacity: 1;
 }
 
 @media (max-width: 1199.96px) {
