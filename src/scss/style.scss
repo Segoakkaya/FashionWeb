@@ -7,6 +7,11 @@ body{
     overflow-x: hidden;
  }
 
+ .custom-container {
+    margin-left:175px;
+    margin-right:175px;
+ }
+
 @media (max-width:1366px) { }
 @include media-breakpoint-down(lg)  { }
 @include media-breakpoint-down(md)  { }

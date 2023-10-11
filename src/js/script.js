@@ -257,7 +257,7 @@
             })
             $('.feedbackpage').owlCarousel({
                 loop:true,
-                margin:10,
+                margin:60,
                 nav:true,
                 dots:true,
                 navContainer:".feedbackpage-Container",
