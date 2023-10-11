@@ -321,7 +321,7 @@
 }
 
 .hotpageCarousel {
-    padding-bottom: 50px;
+    padding-bottom: 250px;
 
     &_card {
         &-img {
@@ -599,7 +599,6 @@
     }
  
     .item{
-
         box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.4);
         padding: 20px;
         &_tt{
@@ -663,9 +662,6 @@
 }
 
 @include media-breakpoint-down(lg) {
-    .feedbackpage{
-        margin-left: 0px;
-    }
     .homepage {
         &-title {
             margin-left: 0px;
@@ -793,6 +789,9 @@
             }
 
         }
+    }
+    .feedbackpage .owl-stage-outer{
+        padding: 0px;
     }
 }
 

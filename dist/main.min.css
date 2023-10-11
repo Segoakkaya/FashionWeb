@@ -17420,6 +17420,12 @@ body {
   margin-right: 175px;
 }
 
+@media (max-width: 1199.96px) {
+  .custom-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 .header {
   background-color: #C2EFD4;
   color: #267D49;
@@ -18598,7 +18604,7 @@ body {
 }
 
 .hotpageCarousel {
-  padding-bottom: 50px;
+  padding-bottom: 250px;
 }
 .hotpageCarousel_card-img {
   background-color: slategray;
@@ -18868,9 +18874,6 @@ body {
 }
 
 @media (max-width: 1199.96px) {
-  .feedbackpage {
-    margin-left: 0px;
-  }
   .homepage-title {
     margin-left: 0px;
   }
@@ -18962,5 +18965,8 @@ body {
   }
   .designer-img-title-small {
     font-size: 15px;
+  }
+  .feedbackpage .owl-stage-outer {
+    padding: 0px;
   }
 }
