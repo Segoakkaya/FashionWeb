@@ -18460,9 +18460,7 @@ body {
 .card-img {
   background-color: #C2EFD4;
   border-radius: 0px;
-}
-.card-img img {
-  max-width: 100%;
+  width: 430px;
 }
 .card-title {
   color: #373737;
