@@ -129,7 +129,9 @@
     &-img {
         background-color: $color--Wgreen;
         border-radius: 0px;
-        width: 430px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
 
     &-title {
@@ -209,8 +211,10 @@
         font-size: 40px;
         color: $color--Dgreen;
         display: flex;
-        justify-content: space-around;
-        margin-top: 0px;
+        justify-content: space-between;
+        margin-top: -60px;
+        margin-right: 45px;
+        margin-left: 45px;
     }
 
     .item {
@@ -317,8 +321,6 @@
 }
 
 .hotpageCarousel {
-    padding-bottom: 250px;
-
     &_card {
         &-img {
             background-color: slategray;
@@ -360,19 +362,16 @@
 .hotpageCarousel {
     display: none;
     width: 60%;
-
     .owl-nav {
-        margin-top: -320px;
         display: flex;
-        justify-content: space-between;
+        justify-content:center;
         align-items: center;
         font-size: 30px;
         color: #224F34;
 
         .owl-next {
             margin-right: -60px;
-            color: white !important;
-            background: $color--Dgreen !important;
+            color: $color--Dgreen !important;
             border-radius: 25px;
             text-align: center;
             width: 50px;
@@ -381,8 +380,7 @@
 
         .owl-prev {
             margin-left: -60px;
-            color: white !important;
-            background: $color--Dgreen !important;
+            color: $color--Dgreen !important;
             border-radius: 25px;
             text-align: center;
             width: 50px;

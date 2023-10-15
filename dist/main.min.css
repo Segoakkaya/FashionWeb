@@ -17418,6 +17418,7 @@ body {
 .custom-container {
   margin-left: 175px;
   margin-right: 175px;
+  overflow: hidden;
 }
 
 @media (max-width: 1199.96px) {
@@ -18460,7 +18461,9 @@ body {
 .card-img {
   background-color: #C2EFD4;
   border-radius: 0px;
-  width: 430px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .card-title {
   color: #373737;
@@ -18524,8 +18527,10 @@ body {
   font-size: 40px;
   color: #267D49;
   display: flex;
-  justify-content: space-around;
-  margin-top: 0px;
+  justify-content: space-between;
+  margin-top: -60px;
+  margin-right: 45px;
+  margin-left: 45px;
 }
 .myCarousel .item {
   width: 400px;
@@ -18601,9 +18606,6 @@ body {
   padding-left: 20px;
 }
 
-.hotpageCarousel {
-  padding-bottom: 250px;
-}
 .hotpageCarousel_card-img {
   background-color: slategray;
 }
@@ -18635,17 +18637,15 @@ body {
   width: 60%;
 }
 .hotpageCarousel .owl-nav {
-  margin-top: -320px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 30px;
   color: #224F34;
 }
 .hotpageCarousel .owl-nav .owl-next {
   margin-right: -60px;
-  color: white !important;
-  background: #267D49 !important;
+  color: #267D49 !important;
   border-radius: 25px;
   text-align: center;
   width: 50px;
@@ -18653,8 +18653,7 @@ body {
 }
 .hotpageCarousel .owl-nav .owl-prev {
   margin-left: -60px;
-  color: white !important;
-  background: #267D49 !important;
+  color: #267D49 !important;
   border-radius: 25px;
   text-align: center;
   width: 50px;
