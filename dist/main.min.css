@@ -18465,6 +18465,9 @@ body {
   align-items: center;
   display: flex;
 }
+.card-img_widht {
+  max-width: 100%;
+}
 .card-title {
   color: #373737;
   text-align: center;
@@ -18809,16 +18812,20 @@ body {
 .feedbackpage .owl-item.active.center .item {
   opacity: 1;
   transition: 0.5s ease-in-out;
-  background: #6BC785;
+  background: #C2EFD4;
   color: #fff;
 }
 
 .feedbackpage .owl-stage-outer {
   padding: 30px 30px;
 }
+.feedbackpage .owl-stage-outer .owl-stage {
+  margin-left: -31px;
+}
 .feedbackpage .item {
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.4);
   padding: 20px;
+  min-height: 226px;
 }
 .feedbackpage .item_tt {
   color: #267D49;
@@ -18847,27 +18854,25 @@ body {
   margin: 15px;
   width: 50px;
   height: 50px;
+  color: #267D49;
   background: #FFF !important;
   text-align: center;
-  opacity: 0.5;
 }
 .feedbackpage-Container .owl-prev:active {
-  background-color: #6BC785 !important;
-  opacity: 1;
+  background-color: #C2EFD4 !important;
 }
 .feedbackpage-Container .owl-next {
   font-size: 30px !important;
   margin: 15px;
   background: #FFF !important;
   text-align: center;
+  color: #267D49;
   border: none;
   width: 50px;
   height: 50px;
-  opacity: 0.5;
 }
 .feedbackpage-Container .owl-next:active {
-  background-color: #6BC785 !important;
-  opacity: 1;
+  background-color: #C2EFD4 !important;
 }
 
 @media (max-width: 1199.96px) {
