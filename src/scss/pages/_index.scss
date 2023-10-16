@@ -225,33 +225,42 @@
     }
 }
 
-.product {
-    margin-top: 100px;
-
-    &_title {
-        color: $color--Bgreen;
-        font-size: 64px;
-        @extend .ff--Roboto;
-        @extend .font-weight--500;
-        font-style: normal;
-        line-height: normal;
-    }
-
-    &_nav {
-        &_item {
-            a {
-                text-decoration: none;
-                color: #454545;
+.Product{
+        &_title {
+            color: $color--Bgreen;
+            font-size: 64px;
+            @extend .ff--Roboto;
+            @extend .font-weight--500;
+            font-style: normal;
+            line-height: normal;
+        }
+        .nav{
+            color: #454545;
+            border: none;
+            gap: 20px;
+            margin-bottom: 20px;
+            justify-content: center;
+            &-item{
                 @extend .ff--Poppins;
                 font-size: 22px;
                 font-style: normal;
                 @extend .font-weight--500;
                 line-height: normal;
                 text-transform: uppercase;
-                margin: 20px;
             }
-
-            &::after {
+            &-link{
+                border: none;
+                color: #454545;
+            }
+        }
+        .nav-tabs .nav-link.active{
+            color: $color--Bgreen;
+            &::after{
+                width: 100%;
+            }
+        }
+        .nav-tabs .nav-link{
+            &::after{
                 margin-top: 5px;
                 content: '';
                 width: 0%;
@@ -259,25 +268,25 @@
                 background: $color--Bgreen;
                 display: block;
                 transition: 0.5s;
-            }
-
-            &:hover:after {
+              }
+              
+              &:hover::after{
                 width: 100%;
-            }
-
-            &:hover {
-                a {
-                    color: $color--Bgreen;
-                }
-            }
+              }
         }
-    }
+        .nav-tabs .nav-link:focus{
+            color: $color--Bgreen;
+            border: none;
+            isolation:auto;
+        }
+        .sira{
+            gap: 15px;
+        }
 }
 
 .hotpage {
     width: 100%;
     height: 100%;
-
     &_card {
         &-img {
             display: flex;
@@ -593,9 +602,6 @@
   
     .owl-stage-outer {
         padding:30px 30px;
-        .owl-stage{
-            margin-left: -31px;
-        }
     }
     .item{
         box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.4);
@@ -765,16 +771,17 @@
         }
     }
 
-    .hotpage {
-        display: none;
+    .tab-pane{
+        .panel {
+            display: none;
+        }
+
     }
 
     .hotpageCarousel {
-
         &_item {
             width: 50%;
         }
-
         display: block;
     }
     .designer{

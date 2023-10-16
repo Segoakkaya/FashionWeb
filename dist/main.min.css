@@ -15378,7 +15378,7 @@ table {
   font-weight: 499 !important;
 }
 
-.font-weight--500, .feedbackpage .item-title, .feedbackpage .item_tt, .feedback-title, .designer-img-title-small, .designer_title_small, .designer_title, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpage_card-title-populer, .hotpage_card-title-cash, .product_nav_item a, .product_title, .seeallBtn a, .card-title-populer, .card-title-cash, .bestpage-title, .bestpage p, .homepage-title-btn, .homepage-title_two, .accordion .form-control, .accordion-menu3_title, .accordion_menu2-list, .accordion_menu1-title_small, .accordion_menu1-title, .footer-menu3 .form-control, .footer-menu3_title, .footer_menu2-list, .footer_menu1-title_small, .footer_menu1-title, .navbar .navbar-nav .nav-link, .sepet-menu-header {
+.font-weight--500, .feedbackpage .item-title, .feedbackpage .item_tt, .feedback-title, .designer-img-title-small, .designer_title_small, .designer_title, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpage_card-title-populer, .hotpage_card-title-cash, .Product .nav-item, .Product_title, .seeallBtn a, .card-title-populer, .card-title-cash, .bestpage-title, .bestpage p, .homepage-title-btn, .homepage-title_two, .accordion .form-control, .accordion-menu3_title, .accordion_menu2-list, .accordion_menu1-title_small, .accordion_menu1-title, .footer-menu3 .form-control, .footer-menu3_title, .footer_menu2-list, .footer_menu1-title_small, .footer_menu1-title, .navbar .navbar-nav .nav-link, .sepet-menu-header {
   font-weight: 500 !important;
 }
 
@@ -16990,7 +16990,7 @@ table {
   font-weight: normal;
 }
 
-.ff--Poppins, .feedbackpage .item-title_small, .designer-img-title-small, .designer-img-title, .designer_title_small, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpageCarousel_card-title, .hotpage_card-title-populer, .hotpage_card-title-cash, .hotpage_card-title, .product_nav_item a, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .accordion .form-control, .accordion-menu3 .btn, .accordion_menu2-list_item, .footer-border, .footer-menu3 .btn, .footer-menu3 .form-control, .footer_menu2-list_item, .navbar, .sepet-menu-header, .header {
+.ff--Poppins, .feedbackpage .item-title_small, .designer-img-title-small, .designer-img-title, .designer_title_small, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpageCarousel_card-title, .hotpage_card-title-populer, .hotpage_card-title-cash, .hotpage_card-title, .Product .nav-item, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .accordion .form-control, .accordion-menu3 .btn, .accordion_menu2-list_item, .footer-border, .footer-menu3 .btn, .footer-menu3 .form-control, .footer_menu2-list_item, .navbar, .sepet-menu-header, .header {
   font-family: Poppins;
 }
 
@@ -16998,7 +16998,7 @@ table {
   font-family: Rufina;
 }
 
-.ff--Roboto, .feedbackpage .item-title, .feedbackpage .item_tt, .feedback-title, .designer_title, .coutdown-menu-title_baslik, .product_title, .bestpage p, .accordion-menu3_title, .accordion_menu2-list, .accordion_menu1-title_small, .footer-menu3_title, .footer_menu2-list, .footer_menu1-title_small {
+.ff--Roboto, .feedbackpage .item-title, .feedbackpage .item_tt, .feedback-title, .designer_title, .coutdown-menu-title_baslik, .Product_title, .bestpage p, .accordion-menu3_title, .accordion_menu2-list, .accordion_menu1-title_small, .footer-menu3_title, .footer_menu2-list, .footer_menu1-title_small {
   font-family: Roboto;
 }
 
@@ -18539,25 +18539,36 @@ body {
   width: 400px;
 }
 
-.product {
-  margin-top: 100px;
-}
-.product_title {
+.Product_title {
   color: #224F34;
   font-size: 64px;
   font-style: normal;
   line-height: normal;
 }
-.product_nav_item a {
-  text-decoration: none;
+.Product .nav {
   color: #454545;
+  border: none;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.Product .nav-item {
   font-size: 22px;
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
-  margin: 20px;
 }
-.product_nav_item::after {
+.Product .nav-link {
+  border: none;
+  color: #454545;
+}
+.Product .nav-tabs .nav-link.active {
+  color: #224F34;
+}
+.Product .nav-tabs .nav-link.active::after {
+  width: 100%;
+}
+.Product .nav-tabs .nav-link::after {
   margin-top: 5px;
   content: "";
   width: 0%;
@@ -18566,11 +18577,16 @@ body {
   display: block;
   transition: 0.5s;
 }
-.product_nav_item:hover:after {
+.Product .nav-tabs .nav-link:hover::after {
   width: 100%;
 }
-.product_nav_item:hover a {
+.Product .nav-tabs .nav-link:focus {
   color: #224F34;
+  border: none;
+  isolation: auto;
+}
+.Product .sira {
+  gap: 15px;
 }
 
 .hotpage {
@@ -18819,9 +18835,6 @@ body {
 .feedbackpage .owl-stage-outer {
   padding: 30px 30px;
 }
-.feedbackpage .owl-stage-outer .owl-stage {
-  margin-left: -31px;
-}
 .feedbackpage .item {
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.4);
   padding: 20px;
@@ -18953,7 +18966,7 @@ body {
   .product ul li {
     padding: 0px;
   }
-  .hotpage {
+  .tab-pane .panel {
     display: none;
   }
   .hotpageCarousel {
