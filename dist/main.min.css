@@ -17421,6 +17421,11 @@ body {
   overflow: hidden;
 }
 
+.header-custom-container {
+  margin-left: 175px;
+  margin-right: 175px;
+}
+
 @media (max-width: 1199.96px) {
   .custom-container {
     margin-left: 0px;
