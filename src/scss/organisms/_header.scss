@@ -126,6 +126,10 @@
                 }
             }
         }
+        .header-custom-container{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
      }
     @include media-breakpoint-down(md)  {
         .navbar{
