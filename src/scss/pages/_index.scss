@@ -592,21 +592,21 @@
     
 }
 .feedbackpage .owl-item.active.center .item {
-    
+
     opacity: 1;
     transition: 0.5s ease-in-out;
     background: $color--Wgreen;
     color: #fff;
   }
 .feedbackpage{
-  
+
     .owl-stage-outer {
-        padding:30px 30px;
+        padding:35px 0px;
     }
     .item{
         box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.4);
         padding: 20px;
-        min-height: 226px;
+        min-height: 250px;
         &_tt{
             color: $color--Dgreen;
             @extend .ff--Roboto;
@@ -634,6 +634,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @extend .ff--Elephant;
         .owl-prev{
             font-size: 30px !important;
             border: none;

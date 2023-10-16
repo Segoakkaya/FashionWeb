@@ -17002,7 +17002,7 @@ table {
   font-family: Roboto;
 }
 
-.ff--Elephant, .accordion_menu1-title, .footer_menu1-title, .navbar-brand, .header_logo {
+.ff--Elephant, .feedbackpage-Container, .accordion_menu1-title, .footer_menu1-title, .navbar-brand, .header_logo {
   font-family: Elephant;
 }
 
@@ -18838,12 +18838,12 @@ body {
 }
 
 .feedbackpage .owl-stage-outer {
-  padding: 30px 30px;
+  padding: 35px 0px;
 }
 .feedbackpage .item {
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.4);
   padding: 20px;
-  min-height: 226px;
+  min-height: 250px;
 }
 .feedbackpage .item_tt {
   color: #267D49;

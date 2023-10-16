@@ -261,7 +261,7 @@
                 nav:true,
                 dots:true,
                 navContainer:".feedbackpage-Container",
-                navText:["ᐸ", "ᐳ"],
+                navText:["<", ">"],
                 center:true,
                 responsive:{
                     0:{
