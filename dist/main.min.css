@@ -17426,6 +17426,21 @@ body {
   margin-right: 175px;
 }
 
+::-webkit-scrollbar {
+  background-color: #C2EFD4;
+  width: 20px;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #224F34;
+  color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #267D49;
+  border-radius: 5px;
+}
+
 @media (max-width: 1199.96px) {
   .custom-container {
     margin-left: 0px;

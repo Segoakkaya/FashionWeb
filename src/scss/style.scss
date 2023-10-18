@@ -16,7 +16,18 @@ body{
     margin-left:175px;
     margin-right:175px;
  }
-
+ ::-webkit-scrollbar{
+   background-color: $color--Wgreen;
+   width: 20px;
+}
+::-webkit-scrollbar-button{
+   background-color: $color--Bgreen;
+   color: white;
+}
+::-webkit-scrollbar-thumb{
+   background-color: $color--Dgreen;
+   border-radius: 5px;
+}
 @media (max-width:1366px) { }
 @include media-breakpoint-down(lg)  { 
     .custom-container {
