@@ -18865,8 +18865,9 @@ body {
 }
 .feedbackpage .item_tt {
   color: #267D49;
-  font-size: 50px;
-  padding: 5px;
+  padding: 10px;
+  width: 45px;
+  height: 45px;
 }
 .feedbackpage .item-title {
   color: #267D49;
