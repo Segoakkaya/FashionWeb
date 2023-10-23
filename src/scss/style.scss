@@ -26,7 +26,6 @@ body{
 }
 ::-webkit-scrollbar-thumb{
    background-color: $color--Dgreen;
-   border-radius: 5px;
 }
 @media (max-width:1366px) { }
 @include media-breakpoint-down(lg)  { 

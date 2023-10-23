@@ -242,7 +242,6 @@
                 margin:10,
                 nav:true,
                 dots:true,
-                navText:["ᐸ", "ᐳ"],
                 responsive:{
                     0:{
                         items:1
@@ -261,7 +260,7 @@
                 nav:true,
                 dots:true,
                 navContainer:".feedbackpage-Container",
-                navText:["<", ">"],
+                navText:["<img src='../assets/img/Group-7.svg'>", "<img src='../assets/img/Group-6.svg'>"],
                 center:true,
                 responsive:{
                     0:{
