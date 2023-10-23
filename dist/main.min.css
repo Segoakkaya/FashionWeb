@@ -15378,7 +15378,7 @@ table {
   font-weight: 499 !important;
 }
 
-.font-weight--500, .feedbackpage .item-title, .feedbackpage .item_tt, .feedback-title, .designer-img-title-small, .designer_title_small, .designer_title, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpage_card-title-populer, .hotpage_card-title-cash, .Product .nav-item, .Product_title, .seeallBtn a, .card-title-populer, .card-title-cash, .bestpage-title, .bestpage p, .homepage-title-btn, .homepage-title_two, .accordion .form-control, .accordion-menu3_title, .accordion_menu2-list, .accordion_menu1-title_small, .accordion_menu1-title, .footer-menu3 .form-control, .footer-menu3_title, .footer_menu2-list, .footer_menu1-title_small, .footer_menu1-title, .navbar .navbar-nav .nav-link, .sepet-menu-header {
+.font-weight--500, .jquery_list-item, .feedbackpage .item-title, .feedbackpage .item_tt, .feedback-title, .designer-img-title-small, .designer_title_small, .designer_title, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpage_card-title-populer, .hotpage_card-title-cash, .Product .nav-item, .Product_title, .seeallBtn a, .card-title-populer, .card-title-cash, .bestpage-title, .bestpage p, .homepage-title-btn, .homepage-title_two, .accordion .form-control, .accordion-menu3_title, .accordion_menu2-list, .accordion_menu1-title_small, .accordion_menu1-title, .footer-menu3 .form-control, .footer-menu3_title, .footer_menu2-list, .footer_menu1-title_small, .footer_menu1-title, .navbar .navbar-nav .nav-link, .sepet-menu-header {
   font-weight: 500 !important;
 }
 
@@ -16990,7 +16990,7 @@ table {
   font-weight: normal;
 }
 
-.ff--Poppins, .feedbackpage .item-title_small, .designer-img-title-small, .designer-img-title, .designer_title_small, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpageCarousel_card-title, .hotpage_card-title-populer, .hotpage_card-title-cash, .hotpage_card-title, .Product .nav-item, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .accordion .form-control, .accordion-menu3 .btn, .accordion_menu2-list_item, .footer-border, .footer-menu3 .btn, .footer-menu3 .form-control, .footer_menu2-list_item, .navbar, .sepet-menu-header, .header {
+.ff--Poppins, .jquery_list-item, .feedbackpage .item-title_small, .designer-img-title-small, .designer-img-title, .designer_title_small, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpageCarousel_card-title, .hotpage_card-title-populer, .hotpage_card-title-cash, .hotpage_card-title, .Product .nav-item, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .accordion .form-control, .accordion-menu3 .btn, .accordion_menu2-list_item, .footer-border, .footer-menu3 .btn, .footer-menu3 .form-control, .footer_menu2-list_item, .navbar, .sepet-menu-header, .header {
   font-family: Poppins;
 }
 
@@ -18912,6 +18912,43 @@ body {
 }
 .feedbackpage-Container .owl-next:hover {
   background-color: #C2EFD4 !important;
+}
+
+.jquery {
+  background-color: #000000;
+  width: 100%;
+  overflow: hidden;
+}
+.jquery .btnbox {
+  margin-left: 180px;
+  z-index: 9;
+}
+.jquery button {
+  border: none;
+  background-color: transparent;
+  color: #267D49;
+  cursor: pointer;
+  transition: 0.5s all;
+  text-align: center;
+}
+.jquery button img {
+  filter: brightness(0.5) invert(1);
+}
+.jquery_list {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+.jquery_list-item {
+  width: 100%;
+  flex: 0 0 100%;
+  margin: 0 10px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1199.96px) {

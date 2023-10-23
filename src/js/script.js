@@ -53,7 +53,7 @@
                   ).innerHTML = "0";
               }
           }, 1000);
-      },
+        },
         isMobile: function () {
             var e = !1;
             (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(
@@ -274,6 +274,21 @@
                     }
                 }
             })
+                var $carouselSlides = $('.jquery_list');
+                var slideWidth = 100;
+                var currentSlide = 0;
+                $('.prev').on("click",function() {
+                  if (currentSlide > 0) {
+                    currentSlide--;
+                    $carouselSlides.css('transform', 'translateX(-' + (currentSlide * slideWidth) + '%)');
+                  }
+                });
+                $('.next').on("click",function() {
+                  if (currentSlide < $carouselSlides.children().length - 1) {
+                    currentSlide++;
+                    $carouselSlides.css('transform', 'translateX(-' + (currentSlide * slideWidth) + '%)');
+                  }
+                });
         },
         utility: {
             cookie: {
