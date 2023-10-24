@@ -17497,6 +17497,11 @@ body {
   border-radius: 5px;
   font-size: 20px;
   padding: 13px 46px;
+  transition: 0.5s all;
+}
+.header_title_loginBtn:hover {
+  background-color: #224F34;
+  color: white;
 }
 
 .sepet-menu {

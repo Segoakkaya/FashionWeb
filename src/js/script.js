@@ -226,6 +226,8 @@
             var carouselSlides = $('.jquery_list');
             var slideWidth = 100;
             var currentSlide = 0;
+
+            
             $('.prev').on("click",function() {
                 if (currentSlide > 0) {
                 currentSlide--;
@@ -243,11 +245,10 @@
                 $(document).on("keydown",function(e) {
                 switch(e.which) {
                     case 37:
-                            
-                    $('.prev').click().on("click");
+                    $('.prev').trigger( "click" );
                     break;
                     case 39:
-                    $( '.next' ).click().on("click");
+                    $( '.next' ).trigger( "click" );
                     break;
                     default: return;
                 }
@@ -348,7 +349,7 @@
                     nav:true,
                     dots:true,
                     navContainer:".feedbackpage-Container",
-                    navText:["<img src='../assets/img/Group-7.svg'>", "<img src='../assets/img/Group-6.svg'>"],
+                    navText:["<img src='./assets/img/Group-7.svg'>", "<img src='./assets/img/Group-6.svg'>"],
                     center:true,
                     responsive:{
                         0:{
