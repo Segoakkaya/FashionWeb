@@ -222,11 +222,21 @@
                 sepetMenu.style.right = '-300px'; // Menüyü tekrar gizler
             });
 
-           
             var carouselSlides = $('.jquery_list');
             var slideWidth = 100;
             var currentSlide = 0;
-
+            
+            function autoSlide() {
+                if (currentSlide < carouselSlides.children().length - 1) {
+                    currentSlide++;
+                    carouselSlides.css('transform', 'translateX(-' + (currentSlide * slideWidth) + '%)');
+                } else {
+                    currentSlide = 0;
+                    carouselSlides.css('transform', 'translateX(-' + (currentSlide * slideWidth) + '%)');
+                }
+            }
+            
+            setInterval(autoSlide, 3000); // 3 saniyede bir otomatik olarak slidera geç
             
             $('.prev').on("click",function() {
                 if (currentSlide > 0) {
@@ -234,12 +244,20 @@
                 carouselSlides.css('transform', 'translateX(-' + (currentSlide * slideWidth) + '%)');
                 }
             });
+            
             $('.next').on("click",function() {
                 if (currentSlide < carouselSlides.children().length - 1) {
                 currentSlide++;
                 carouselSlides.css('transform', 'translateX(-' + (currentSlide * slideWidth) + '%)');
                 }
             });
+
+            
+
+
+
+
+
             left = 37,right = 39
 
                 $(document).on("keydown",function(e) {
