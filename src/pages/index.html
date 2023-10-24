@@ -14,11 +14,11 @@
 </head>
 <body data-template="index">
   <div class="jquery d-flex p-1">
-    <div class="btnbox d-flex justify-content-center">
+    <div class="btnbox d-flex align-item-center">
       <button class="prev"><img src="../assets/img/Group-7.svg"></button>
       <button class="next"><img src="../assets/img/Group-6.svg"></button>
     </div>
-    <div class="jquery-textmenu">
+    <div class="jquery-textmenu d-flex align-item-center">
       <ul class="jquery_list">
         <li class="jquery_list-item">Text one ! Hello</li>
         <li class="jquery_list-item">Text two ! Hello</li>
@@ -27,6 +27,18 @@
         <li class="jquery_list-item">Text  five ! Hello</li>
         <li class="jquery_list-item">Text six ! Hello</li>
       </ul>
+    </div>
+    <div class="optionsmenu">
+      <b>Our development depends on your support. Please evaluate.</b>
+      <select name="" id="" class="evaluation">
+        <option value="0" hidden>Evaluation</option>
+        <option value="1">Perfect</option>
+        <option value="2">Very Good</option>
+        <option value="3">Good</option>
+        <option value="4">Not Bad</option>
+        <option value="4">Bad</option>
+      </select>
+      <span class="sonuc"></span>
     </div>
   </div>
   <headerpartial></headerpartial>

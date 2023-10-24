@@ -234,7 +234,6 @@
                     carouselSlides.css('transform', 'translateX(-' + (currentSlide * slideWidth) + '%)');
                 }
             }
-
             setInterval(autoSlide, 5000);
             
             $('.prev').on("click",function() {
@@ -265,6 +264,29 @@
                 }
                 e.preventDefault();
                 });
+
+
+            $( ".evaluation" ).on( "change", function() {
+                var str = "";
+                    $( ".evaluation option:selected" ).each(function() {
+                    // str += $( this ).text() + " ";
+                    if($( this ).text()=="Perfect")
+                    str+="★★★★★";
+                    else if($( this ).text()=="Very Good")
+                    str+="★★★★";
+                    else if($( this ).text()=="Good")
+                    str+="★★★";
+                    else if($( this ).text()=="Not Bad")
+                    str+="★★";
+                    else if($( this ).text()=="Bad")
+                    str+="★";
+                    else
+                    str+=" ";
+                    });
+                $( ".sonuc" ).text( str );
+            } ).trigger( "change" );
+
+
         },
         utility: {
             cookie: {

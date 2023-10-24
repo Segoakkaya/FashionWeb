@@ -668,17 +668,17 @@
 
 
 .jquery{
-    &-textmenu{
-        overflow: hidden;
-        width: 500px;
-        align-items: center;
-    }
+        &-textmenu{
+            overflow: hidden;
+            width: 500px;
+            align-items: center;
+        }
     background-color: #000000;
-    .btnbox{
-        margin-left: 180px;
-        z-index: 9;
-    }
-    button{
+        .btnbox{
+            margin-left: 180px;
+            z-index: 9;
+        }
+        button{
         border: none;
         background-color: transparent;
         color:$color--Dgreen;
@@ -687,8 +687,8 @@
         text-align: center;
         img{
             filter:brightness(0.5) invert(1);
+            }
         }
-    }
         width: 100%;
         overflow: hidden;
       &_list{
@@ -706,12 +706,59 @@
         color: $color--white;
         display: flex;
         align-items: center;
-      }
+            }
+        }
+    .optionsmenu{
+        float: right;
+        .evaluation{
+            padding: 3px;
+            border:1px solid white;
+            font-size: 15px;
+            color: white;
+            background-color: #000000;
+            @extend .ff--Poppins;
+            outline: 0px;
+        }
+        .sonuc{
+            padding: 3px;
+            font-size: 20px;
+            color: yellow;
+            background-color: #000000;
+            @extend .ff--Poppins;
+        }
+        b{
+            padding: 3px;
+            font-size: 15px;
+            color: white;
+            @extend .ff--Poppins;
+        }
+        // .send{
+        //     color: white;
+        //     text-decoration: none;
+        //     margin-left: 15px;
+        //     border: 1px solid white;
+        //     @extend .ff--Poppins;
+        //     padding:0px 35px;
+        //     border-radius: 12px;
+        //     cursor: pointer;
+        //     transition: 0.5s ease-in;
+        //     &:hover{
+        //         color: #000000;
+        //         background-color: white;
+        //     }
+        // }
     }
-
 }
 
 @media (max-width:1366px) {
+    .jquery{
+        .btnbox{
+            margin-left: 75px;
+        }
+        &-textmenu{
+            width: 600px;
+        }
+    }
 }
 
 @include media-breakpoint-down(lg) {
@@ -734,8 +781,16 @@
     }
     .jquery 
     {
+        &-textmenu{
+            width: 400px;
+        }
         .btnbox{
             margin-left: 0px;
+        }
+        .optionsmenu{
+            b{
+                font-size: 10px;
+            }
         }
     }
 }
@@ -795,6 +850,24 @@
                 }
             }
 
+        }
+    }
+    .jquery{
+        &-textmenu{
+            overflow: hidden;
+            width: 350px;
+            align-items: center;
+        }
+        b{
+            font-size: 10px;
+        }
+        .optionsmenu{
+            .evaluation{
+                font-size: 10px;
+            }
+            .sonuc{
+                font-size: 10px;
+            }
         }
     }
 }

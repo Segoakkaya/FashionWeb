@@ -16990,7 +16990,7 @@ table {
   font-weight: normal;
 }
 
-.ff--Poppins, .jquery_list-item, .feedbackpage .item-title_small, .designer-img-title-small, .designer-img-title, .designer_title_small, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpageCarousel_card-title, .hotpage_card-title-populer, .hotpage_card-title-cash, .hotpage_card-title, .Product .nav-item, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .accordion .form-control, .accordion-menu3 .btn, .accordion_menu2-list_item, .footer-border, .footer-menu3 .btn, .footer-menu3 .form-control, .footer_menu2-list_item, .navbar, .sepet-menu-header, .header {
+.ff--Poppins, .jquery .optionsmenu b, .jquery .optionsmenu .sonuc, .jquery .optionsmenu .evaluation, .jquery_list-item, .feedbackpage .item-title_small, .designer-img-title-small, .designer-img-title, .designer_title_small, .coutdown-menu-btn, .coutdown-menu-time_box .smalltext, .coutdown-menu-time_box .minutes, .coutdown-menu-time_box .hours, .coutdown-menu-time_box .days, .coutdown-menu-title_content, .hotpageCarousel_card-title-populer, .hotpageCarousel_card-title-cash, .hotpageCarousel_card-title, .hotpage_card-title-populer, .hotpage_card-title-cash, .hotpage_card-title, .Product .nav-item, .seeallBtn a, .card-title-populer, .card-title-cash, .card-title, .bestpage-title, .homepage-title-btn, .homepage-title_two, .accordion .form-control, .accordion-menu3 .btn, .accordion_menu2-list_item, .footer-border, .footer-menu3 .btn, .footer-menu3 .form-control, .footer_menu2-list_item, .navbar, .sepet-menu-header, .header {
   font-family: Poppins;
 }
 
@@ -18967,7 +18967,37 @@ body {
   display: flex;
   align-items: center;
 }
+.jquery .optionsmenu {
+  float: right;
+}
+.jquery .optionsmenu .evaluation {
+  padding: 3px;
+  border: 1px solid white;
+  font-size: 15px;
+  color: white;
+  background-color: #000000;
+  outline: 0px;
+}
+.jquery .optionsmenu .sonuc {
+  padding: 3px;
+  font-size: 20px;
+  color: yellow;
+  background-color: #000000;
+}
+.jquery .optionsmenu b {
+  padding: 3px;
+  font-size: 15px;
+  color: white;
+}
 
+@media (max-width: 1366px) {
+  .jquery .btnbox {
+    margin-left: 75px;
+  }
+  .jquery-textmenu {
+    width: 600px;
+  }
+}
 @media (max-width: 1199.96px) {
   .homepage-title {
     margin-left: 0px;
@@ -18981,8 +19011,14 @@ body {
     align-items: center;
     text-align: center;
   }
+  .jquery-textmenu {
+    width: 400px;
+  }
   .jquery .btnbox {
     margin-left: 0px;
+  }
+  .jquery .optionsmenu b {
+    font-size: 10px;
   }
 }
 @media (max-width: 991.96px) {
@@ -19028,6 +19064,20 @@ body {
   }
   .designer-img-title-small {
     font-size: 20px;
+  }
+  .jquery-textmenu {
+    overflow: hidden;
+    width: 350px;
+    align-items: center;
+  }
+  .jquery b {
+    font-size: 10px;
+  }
+  .jquery .optionsmenu .evaluation {
+    font-size: 10px;
+  }
+  .jquery .optionsmenu .sonuc {
+    font-size: 10px;
   }
 }
 @media (max-width: 767.96px) {
