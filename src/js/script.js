@@ -213,13 +213,12 @@
             const sepetMenu = document.querySelector('.sepet-menu');
 
             alisverisButonu.addEventListener('click', function() {
-                sepetMenu.style.right = '0'; // Menüyü görünür hale getirir
+                sepetMenu.style.right = '0';
             });
 
-            // Menüyü kapatmak için geri butonunu ekleyebilirsiniz
             const geriButonu = document.getElementById('geri-butonu');
             geriButonu.addEventListener('click', function() {
-                sepetMenu.style.right = '-300px'; // Menüyü tekrar gizler
+                sepetMenu.style.right = '-300px';
             });
 
             var carouselSlides = $('.jquery_list');
@@ -235,28 +234,22 @@
                     carouselSlides.css('transform', 'translateX(-' + (currentSlide * slideWidth) + '%)');
                 }
             }
-            
-            setInterval(autoSlide, 3000); // 3 saniyede bir otomatik olarak slidera geç
+
+            setInterval(autoSlide, 5000);
             
             $('.prev').on("click",function() {
                 if (currentSlide > 0) {
                 currentSlide--;
                 carouselSlides.css('transform', 'translateX(-' + (currentSlide * slideWidth) + '%)');
-                }
+            }                
             });
             
             $('.next').on("click",function() {
                 if (currentSlide < carouselSlides.children().length - 1) {
                 currentSlide++;
-                carouselSlides.css('transform', 'translateX(-' + (currentSlide * slideWidth) + '%)');
-                }
+                carouselSlides.css('transform', 'translateX(-' + (currentSlide * slideWidth) + '%)');      
+            }
             });
-
-            
-
-
-
-
 
             left = 37,right = 39
 
