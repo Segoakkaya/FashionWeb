@@ -668,6 +668,11 @@
 
 
 .jquery{
+    &-textmenu{
+        overflow: hidden;
+        width: 500px;
+        align-items: center;
+    }
     background-color: #000000;
     .btnbox{
         margin-left: 180px;
@@ -698,7 +703,6 @@
         flex: 0 0 100%;
         @extend .ff--Poppins;
         @extend .font-weight--500;
-        margin: 0 10px;
         color: $color--white;
         display: flex;
         align-items: center;
@@ -728,17 +732,22 @@
             }
         }
     }
-    
+    .jquery 
+    {
+        .btnbox{
+            margin-left: 0px;
+        }
+    }
 }
 
 
 @include media-breakpoint-down(md) {
     .homepage-title{
         &_one{
-            margin-left: 65px !important;
+            margin-left: 40px !important;
         }
         &_two{
-            margin-left: 65px !important;            
+            margin-left: 40px !important;            
         }
     }
     .homepage-title-btn{

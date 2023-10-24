@@ -222,72 +222,36 @@
                 sepetMenu.style.right = '-300px'; // Menüyü tekrar gizler
             });
 
-            $('.mycarousel').owlCarousel({
-                loop:true,
-                margin:10,
-                nav:true,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:1
-                    },
-                    1000:{
-                        items:1
-                    }
+           
+            var carouselSlides = $('.jquery_list');
+            var slideWidth = 100;
+            var currentSlide = 0;
+            $('.prev').on("click",function() {
+                if (currentSlide > 0) {
+                currentSlide--;
+                carouselSlides.css('transform', 'translateX(-' + (currentSlide * slideWidth) + '%)');
                 }
-            })
-            $('.hotpageC').owlCarousel({
-                margin:10,
-                nav:true,
-                dots:true,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:1
-                    },
-                    1000:{
-                        items:1
-                    }
+            });
+            $('.next').on("click",function() {
+                if (currentSlide < carouselSlides.children().length - 1) {
+                currentSlide++;
+                carouselSlides.css('transform', 'translateX(-' + (currentSlide * slideWidth) + '%)');
                 }
-            })
-            $('.feedbackpage').owlCarousel({
-                loop:true,
-                margin:50,
-                nav:true,
-                dots:true,
-                navContainer:".feedbackpage-Container",
-                navText:["<img src='../assets/img/Group-7.svg'>", "<img src='../assets/img/Group-6.svg'>"],
-                center:true,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:2
-                    },
-                    1000:{
-                        items:3
-                    }
+            });
+            left = 37,right = 39
+
+                $(document).on("keydown",function(e) {
+                switch(e.which) {
+                    case 37:
+                            
+                    $('.prev').click().on("click");
+                    break;
+                    case 39:
+                    $( '.next' ).click().on("click");
+                    break;
+                    default: return;
                 }
-            })
-                var $carouselSlides = $('.jquery_list');
-                var slideWidth = 100;
-                var currentSlide = 0;
-                $('.prev').on("click",function() {
-                  if (currentSlide > 0) {
-                    currentSlide--;
-                    $carouselSlides.css('transform', 'translateX(-' + (currentSlide * slideWidth) + '%)');
-                  }
-                });
-                $('.next').on("click",function() {
-                  if (currentSlide < $carouselSlides.children().length - 1) {
-                    currentSlide++;
-                    $carouselSlides.css('transform', 'translateX(-' + (currentSlide * slideWidth) + '%)');
-                  }
+                e.preventDefault();
                 });
         },
         utility: {
@@ -343,6 +307,62 @@
                     });
                 }
             }
+        },
+        pages: {
+            index: function(){
+                $('.mycarousel').owlCarousel({
+                    loop:true,
+                    margin:10,
+                    nav:true,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:1
+                        },
+                        1000:{
+                            items:1
+                        }
+                    }
+                })
+                $('.hotpageC').owlCarousel({
+                    margin:10,
+                    nav:true,
+                    dots:true,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:1
+                        },
+                        1000:{
+                            items:1
+                        }
+                    }
+                })
+                $('.feedbackpage').owlCarousel({
+                    loop:true,
+                    margin:50,
+                    nav:true,
+                    dots:true,
+                    navContainer:".feedbackpage-Container",
+                    navText:["<img src='../assets/img/Group-7.svg'>", "<img src='../assets/img/Group-6.svg'>"],
+                    center:true,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:2
+                        },
+                        1000:{
+                            items:3
+                        }
+                    }
+                })
+            }
         }
     };
     window.script = script;
@@ -377,6 +397,7 @@ Script.getModul = function () {
 Script.runModule = function (module) {
     switch (module) {
         case "index":
+            script.app.pages.index();
             break;
         default:
             break;

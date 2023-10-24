@@ -103,15 +103,26 @@
             font-size: 30px;
             border: none;
         }
-        .navbar-nav .nav-link{
-            color: $color--green;
-            text-decoration: none;
-            @extend .font-weight--500;
-        }
-        .navbar-nav .nav-link.active{
-            font-size: 22px;
-            color: $color--Dgreen;
-            text-decoration: none;
+        .nav{
+            &-link{
+                padding: 10px;
+                color: $color--green;
+                text-decoration: none;
+                font-size: 22px;
+                @extend .font-weight--500;
+                .active{
+                    color: $color--Bgreen;
+                    text-decoration: none;
+                }
+                
+                &:hover{
+                    color: $color--Wgreen;
+                    background-color: $color--Dgreen;
+                }
+            }
+            &-item{
+                border-bottom: 1px solid $color--Dgreen;
+            }
         }
     }
     
