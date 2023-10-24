@@ -266,26 +266,32 @@
                 });
 
 
+                function rate(count) {
+                    var symbol = "";
+                    for(var i = 1; i <= count; i++) {
+                        symbol += "<i class='icon-fi-ss-star'></i>";
+                    }
+                    return symbol;
+                }
+
             $( ".evaluation" ).on( "change", function() {
                 var str = "";
                     $( ".evaluation option:selected" ).each(function() {
-                    // str += $( this ).text() + " ";
                     if($( this ).text()=="Perfect")
-                    str+="★★★★★";
+                    str = rate(5);
                     else if($( this ).text()=="Very Good")
-                    str+="★★★★";
+                    str = rate(4);
                     else if($( this ).text()=="Good")
-                    str+="★★★";
+                    str = rate(3);
                     else if($( this ).text()=="Not Bad")
-                    str+="★★";
+                    str = rate(2);
                     else if($( this ).text()=="Bad")
-                    str+="★";
+                    str = rate(1);
                     else
                     str+=" ";
                     });
-                $( ".sonuc" ).text( str );
+                $( ".sonuc" ).html(str);
             } ).trigger( "change" );
-
 
         },
         utility: {
