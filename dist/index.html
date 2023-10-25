@@ -76,7 +76,7 @@
                 <div class="header_title">
                     <ul class="d-flex justify-content-end">
                       <li class="">
-                        <a href="#" id="alisveris-butonu"><img src="../assets/img/Group-1.svg" class="header_title_icon"></a>
+                        <a href="javascript:void(0);" id="alisveris-butonu"><i class="icon-cart"><span id="item-count"></span></i></a>
                       </li>
                       <li class="">
                         <a href="#" class="header_title_loginBtn">
@@ -94,11 +94,11 @@
           <span class="sepet-menu-header-title">CART</span>
           <button id="geri-butonu" type="button" class="btn-close" aria-label="Close"></button>
         </div>
-        <!-- sepetimin icerigi -->
       </div>
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Rivo</a>
+          <a href="javascript:void(0);" id="alisveris-butonu"><i class="icon-cart"><span id="item-count"></span></i></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -115,9 +115,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">CONTACT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CART</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">LOGIN</a>
@@ -158,44 +155,59 @@
       <div class="cards">
         <div class="row">
           <div class="col-4">
-            <div class="card">
-              <div class="card-img">
-                <img src="./assets/img//pexels-dima-valkov-6211621-1.png" alt="" class="card-img_widht">
+            <div class="card" id="card">
+              <div class="card-img d-flex flex-column">
+                <img src="./assets/img//pexels-dima-valkov-6211621-1.png" alt="" class="card-img_widht" id="card-img_widht">
               </div>
               <div class="card-title  mt-3">
-                Regular Fit Long Slevee Top
+                <p id="card-title-p">Regular Fit Long Slevee Top</p>
                 <p class="d-flex justify-content-center  pt-2 pb-2">
-                  <span class="card-title-cash">$38.99</span> <span class="card-title-populer">5.0 <i
+                  <span class="card-title-cash" id="card-title-cash">$38.99</span> <span class="card-title-populer">5.0 <i
                       class="icon-fi-ss-star"></i></span>
                 </p>
+              </div>
+              <div class="card-hover">
+                <button class="btn-add-to-cart">
+                  <span class="icon-cart"></span>
+                </button>
               </div>
             </div>
           </div>
           <div class="col-4">
-            <div class="card">
+            <div class="card" id="card">
               <div class="card-img">
-                <img src="./assets/img/pexels-dima-valkov-6211616-(1)-2.png" alt="" class="card-img_widht">
+                <img src="./assets/img/pexels-dima-valkov-6211616-(1)-2.png" alt="" class="card-img_widht" id="card-img_widht">
               </div>
               <div class="card-title  mt-3">
-                Black Crop Tailored Jacket
+                <p id="card-title-p">Black Crop Tailored Jacket</p>
                 <p class="d-flex justify-content-center pt-2 pb-2">
-                  <span class="card-title-cash">$62.99</span> <span class="card-title-populer">4.9 <i
+                  <span class="card-title-cash" id="card-title-cash">$62.99</span> <span class="card-title-populer">4.9 <i
                       class="icon-fi-ss-star"></i></span>
                 </p>
+              </div>
+              <div class="card-hover">
+                <button class="btn-add-to-cart">
+                  <span class="icon-cart"></span>
+                </button>
               </div>
             </div>
           </div>
           <div class="col-4">
-            <div class="card">
+            <div class="card" id="card">
               <div class="card-img">
-                <img src="./assets/img/pexels-dima-valkov-6503007-3.png" alt="" class="card-img_widht">
+                <img src="./assets/img/pexels-dima-valkov-6503007-3.png" alt="" class="card-img_widht" id="card-img_widht">
               </div>
               <div class="card-title mt-3">
-                Textured Sunset Shirt
+                <p id="card-title-p">Textured Sunset Shirt</p>
                 <p class="d-flex justify-content-center pt-2 pb-2">
-                  <span class="card-title-cash">$49.99</span> <span class="card-title-populer">5.0 <i
+                  <span class="card-title-cash" id="card-title-cash">$49.99</span> <span class="card-title-populer">5.0 <i
                       class="icon-fi-ss-star"></i></span>
                 </p>
+              </div>
+              <div class="card-hover">
+                <button class="btn-add-to-cart">
+                  <span class="icon-cart"></span>
+                </button>
               </div>
             </div>
           </div>
@@ -204,44 +216,59 @@
       <div class="myCarousel">
         <div class="mycarousel owl-carousel owl-theme">
           <div class="item">
-            <div class="card">
+            <div class="card" id="card">
               <div class="card-img mx-auto">
-                <img src="./assets/img//pexels-dima-valkov-6211621-1.png" alt="">
+                <img src="./assets/img//pexels-dima-valkov-6211621-1.png" alt="" class="card-img_widht" id="card">
               </div>
               <div class="card-title  mt-3">
-                Regular Fit Long Slevee Top
+                <p id="card-title-p">Regular Fit Long Slevee Top</p>
                 <p class="d-flex justify-content-center  pt-2 pb-2">
-                  <span class="card-title-cash">$38.99</span> <span class="card-title-populer">5.0 <i
+                  <span class="card-title-cash" id="card-title-cash">$38.99</span> <span class="card-title-populer">5.0 <i
                       class="icon-fi-ss-star"></i></span>
                 </p>
+              </div>
+              <div class="card-hover">
+                <button class="btn-add-to-cart">
+                  <span class="icon-cart"></span>
+                </button>
               </div>
             </div>
           </div>
           <div class="item">
-            <div class="card">
+            <div class="card" id="card">
               <div class="card-img mx-auto">
-                <img src="./assets/img/pexels-dima-valkov-6211616-(1)-2.png" alt="">
+                <img src="./assets/img/pexels-dima-valkov-6211616-(1)-2.png" alt=""class="card-img_widht" id="card-img_widht">        
               </div>
               <div class="card-title  mt-3">
-                Black Crop Tailored Jacket
+                <p id="card-title-p">Black Crop Tailored Jacket</p>
                 <p class="d-flex justify-content-center pt-2 pb-2">
-                  <span class="card-title-cash">$62.99</span> <span class="card-title-populer">4.9 <i
+                  <span class="card-title-cash" id="card-title-cash">$62.99</span> <span class="card-title-populer">4.9 <i
                       class="icon-fi-ss-star"></i></span>
                 </p>
+              </div>
+              <div class="card-hover">
+                <button class="btn-add-to-cart">
+                  <span class="icon-cart"></span>
+                </button>
               </div>
             </div>
           </div>
           <div class="item">
-            <div class="card">
+            <div class="card" id="card">
               <div class="card-img mx-auto">
-                <img src="./assets/img/pexels-dima-valkov-6503007-3.png" alt="">
+                <img src="./assets/img/pexels-dima-valkov-6503007-3.png" alt=""class="card-img_widht" id="card-img_widht">
               </div>
               <div class="card-title mt-3">
-                Textured Sunset Shirt
+                <p id="card-title-p">Textured Sunset Shirt</p>
                 <p class="d-flex justify-content-center pt-2 pb-2">
-                  <span class="card-title-cash">$49.99</span> <span class="card-title-populer">5.0 <i
+                  <span class="card-title-cash" id="card-title-cash">$49.99</span> <span class="card-title-populer">5.0 <i
                       class="icon-fi-ss-star"></i></span>
                 </p>
+              </div>
+              <div class="card-hover">
+                <button class="btn-add-to-cart">
+                  <span class="icon-cart"></span>
+                </button>
               </div>
             </div>
           </div>
@@ -280,102 +307,142 @@
           tabindex="0">
           <div class="panel">
             <div class="sira d-flex justify-content-between mb-5">
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="" class="hotpage_card-img_widht" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1)-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1)-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
             </div>
             <div class="sira d-flex justify-content-between">
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -383,114 +450,154 @@
           <div class="hotpageCarousel m-auto">
             <div class="hotpageC owl-carousel owl-theme">
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1) 1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1)-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -499,103 +606,143 @@
         </div>
         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
           <div class="panel">
-            <div class="sira d-flex justify-content-between  mb-5">
-              <div class="hotpage_card">
+            <div class="sira d-flex justify-content-between mb-5">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="" class="hotpage_card-img_widht" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1)-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1)-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
             </div>
             <div class="sira d-flex justify-content-between">
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -603,114 +750,154 @@
           <div class="hotpageCarousel m-auto">
             <div class="hotpageC owl-carousel owl-theme">
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1) 1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1)-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -719,103 +906,143 @@
         </div>
         <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
           <div class="panel">
-            <div class="sira d-flex justify-content-between  mb-5">
-              <div class="hotpage_card">
+            <div class="sira d-flex justify-content-between mb-5">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="" class="hotpage_card-img_widht" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1)-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1)-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
             </div>
             <div class="sira d-flex justify-content-between">
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -823,114 +1050,154 @@
           <div class="hotpageCarousel m-auto">
             <div class="hotpageC owl-carousel owl-theme">
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1) 1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1)-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -940,102 +1207,142 @@
         <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
           <div class="panel">
             <div class="sira d-flex justify-content-between mb-5">
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="" class="hotpage_card-img_widht" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1)-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1)-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
             </div>
             <div class="sira d-flex justify-content-between">
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
-              <div class="hotpage_card">
+              <div class="hotpage_card" id="card">
                 <div class="hotpage_card-img">
-                  <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="">
+                  <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="" id="card-img_widht">
                 </div>
                 <div class="hotpage_card-title  mt-3">
-                  Regular Fit Long Slevee Top
+                  <p id="card-title-p">Regular Fit Long Slevee Top</p>
                   <p class="d-flex justify-content-center  pt-2 pb-2">
-                    <span class="hotpage_card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
+                    <span class="hotpage_card-title-cash" id="card-title-cash">$38.99</span> <span class="hotpage_card-title-populer">5.0 <i
                         class="icon-fi-ss-star"></i></span>
                   </p>
+                </div>
+                <div class="card-hover">
+                  <button class="btn-add-to-cart">
+                    <span class="icon-cart"></span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -1043,114 +1350,154 @@
           <div class="hotpageCarousel m-auto">
             <div class="hotpageC owl-carousel owl-theme">
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211601-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6211614-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402846-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6402848-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-dima-valkov-6511777-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-heitor-verdi-7665789-2.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-monstera-6311612-3.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="hotpageCarousel_card">
+                <div class="hotpageCarousel_card" id="card">
                   <div class="hotpageCarousel_card-img">
-                    <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1) 1.png" alt="">
+                    <img src="./assets/img/CarouselImg/pexels-monstera-6311613-(1)-1.png" alt="" id="card-img_widht">
                   </div>
                   <div class="hotpageCarousel_card-title  mt-3">
-                    Regular Fit Long Slevee Top
+                    <p id="card-title-p">Regular Fit Long Slevee Top</p>
                     <p class="d-flex justify-content-center  pt-2 pb-2">
-                      <span class="hotpageCarousel_card-title-cash">$38.99</span> <span
+                      <span class="hotpageCarousel_card-title-cash" id="card-title-cash">$38.99</span> <span
                         class="hotpageCarousel_card-title-populer">5.0 <i class="icon-fi-ss-star"></i></span>
                     </p>
+                  </div>
+                  <div class="card-hover">
+                    <button class="btn-add-to-cart">
+                      <span class="icon-cart"></span>
+                    </button>
                   </div>
                 </div>
               </div>

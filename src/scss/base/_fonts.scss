@@ -320,18 +320,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-@font-face {
-    font-family: 'icomoon';
-    src:  url('assets/fonts/icomoon/icomoon.eot?931y49');
-    src:  url('assets/fonts/icomoon/icomoon.eot?931y49#iefix') format('embedded-opentype'),
-      url('assets/fonts/icomoon/icomoon.ttf?931y49') format('truetype'),
-      url('assets/fonts/icomoon/icomoon.woff?931y49') format('woff'),
-      url('assets/fonts/icomoon/icomoon.svg?931y49#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
   @font-face {
     font-family: 'Elephant';
     src: url('assets/fonts/Elephant/subset-Elephant-Regular.woff2') format('woff2'),
@@ -341,3 +329,14 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'icomoon';
+    src:  url('assets/fonts/icomoon/icomoon.eot?j3ddbl');
+    src:  url('assets/fonts/icomoon/icomoon.eot?j3ddbl#iefix') format('embedded-opentype'),
+      url('assets/fonts/icomoon/icomoon.ttf?j3ddbl') format('truetype'),
+      url('assets/fonts/icomoon/icomoon.woff?j3ddbl') format('woff'),
+      url('assets/fonts/icomoon/icomoon.svg?j3ddbl#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }

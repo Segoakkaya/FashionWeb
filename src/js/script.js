@@ -208,7 +208,7 @@
                 }
             });
 
-
+       
             const alisverisButonu = document.getElementById('alisveris-butonu');
             const sepetMenu = document.querySelector('.sepet-menu');
 
@@ -218,7 +218,7 @@
 
             const geriButonu = document.getElementById('geri-butonu');
             geriButonu.addEventListener('click', function() {
-                sepetMenu.style.right = '-300px';
+                sepetMenu.style.right = '-500px';
             });
 
             var carouselSlides = $('.jquery_list');
@@ -293,6 +293,90 @@
                 $( ".sonuc" ).html(str);
             } ).trigger( "change" );
 
+
+            $(".btn-add-to-cart").on("click", function(e) {
+                let card = $(this).closest("#card");
+                let title = card.find("#card-title-p").text();
+                let price = card.find("#card-title-cash").text();
+                let image = card.find("#card-img_widht").attr("src");
+                
+                $(this).addClass("disabled").text("In Cart");
+                let shopping = new Shopping(image, title, price);
+                let ui = new UI();
+                ui.addToCart(shopping);
+                ui.removeCard();
+                ui.cartCount();
+                alisverisButonu.click();
+                e.preventDefault();
+              });
+
+                
+              $(".btn-delete").on("click", function() {
+                $(this).closest(".list-item").remove();
+                let ui = new UI();
+                ui.cartCount();
+              });
+              
+              $(".btn-cart").on("click", function() {
+                $(".sepet-menu").toggleClass("d-none");
+              });
+              
+              class Shopping {
+                constructor(image, title, price) {
+                  this.image = image;
+                  this.title = title;
+                  this.price = price;
+                }
+              }
+              
+              class UI {
+                addToCart(shopping) {
+                  let listItem = $("<div>").addClass("list-item");
+                  listItem.html(`
+                    <div class="row align-items-center color--Dgreen">
+                      <div class="col-md-3 col-3">
+                        <img src="${shopping.image}" alt="product" class="img-fluid">
+                      </div>
+                      <div class="col-md-5 col-3">
+                        <div class="title">${shopping.title}</div>
+                      </div>
+                      <div class="col-md-2 col-2">
+                        <div class="price">${shopping.price}</div>
+                      </div>
+                      <div class="col-md-2 col-2">
+                        <button class="btn btn-delete text-danger">
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  `);
+                  $(".sepet-menu").append(listItem);
+                }
+                removeCard() {
+                  $(".btn-delete").on("click", function() {
+                    $(this).closest(".list-item").remove();
+                    let ui = new UI();
+                    ui.cartCount();
+                    $(".btn-add-to-cart").html("<span class='icon-cart'></span>");
+                  });
+                }
+              
+                cartCount() {
+                  let cartListItem = $(".sepet-menu").find(".list-item");
+                  $("#item-count").text(cartListItem.length);
+                }
+              
+                carToogle() {
+                  $(".btn-cart").on("click", function() {
+                    $(".shopping-cart-list").toggleClass("d-none");
+                  });
+                }
+              }
+              
+              $(document).on("ready",function() {
+                let ui = new UI();
+                ui.carToogle();
+              });
         },
         utility: {
             cookie: {

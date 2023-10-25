@@ -39,11 +39,6 @@
         }
         &_title{
             padding-top: 17px;
-            &_icon{
-                width: 32px;
-                height: 32px;
-                margin-right: 20px;
-            }
             &_loginBtn{
                 color: $color--Bgreen;
                 text-decoration: none;
@@ -59,11 +54,39 @@
             }
         }
     }
+    #alisveris-butonu{
+      font-size: 30px;
+      color: #224F34;
+      margin-right: 30px;
+      text-decoration: none;
+      position: relative;
+      @extend .ff--Poppins;
+      @extend .font-weight--500;
+      z-index: 999;
+    }
+    #item-count{
+      width: 15px;
+      height: 15px;
+      border-radius: 9px;
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background-color: red;
+      color: white;
+      font-size: 15px;
+      text-align: center;
+      @extend .ff--Poppins;
+      @extend .font-weight--500;
+    }
+    .list-item{
+      @extend .ff--Poppins;
+      font-size: 20px;
+    }
     .sepet-menu {
         position: fixed;
         top: 0;
-        right: -300px;
-        width: 300px;
+        right: -500px;
+        width: 500px;
         height: 100%;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -71,6 +94,8 @@
         background-color: $color--Wgreen;
         padding: 20px;
         z-index: 9999;
+        overflow-x: hidden;
+        overflow-y: scroll;
         &-header{
             @extend .ff--Poppins;
             @extend .font-weight--500;
@@ -155,5 +180,12 @@
             display: none !important;
         }
      }
-    @include media-breakpoint-down(sm)  { }
+    @include media-breakpoint-down(sm)  {
+      .sepet-menu{
+        width: 300px;
+       }
+       .list-item{
+        font-size: 12px;
+       }
+    }
     @include media-breakpoint-down(def) { }
