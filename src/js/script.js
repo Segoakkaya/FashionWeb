@@ -209,16 +209,17 @@
             });
 
        
-            const alisverisButonu = document.getElementById('alisveris-butonu');
-            const sepetMenu = document.querySelector('.sepet-menu');
+            const alisverisButonu = $("#alisveris-butonu");
+            const sepetMenu = $(".sepet-menu");
 
-            alisverisButonu.addEventListener('click', function() {
-                sepetMenu.style.right = '0';
+            alisverisButonu.on('click', function() {
+                sepetMenu.css("right","0px");
+                alert("basildi");
             });
 
-            const geriButonu = document.getElementById('geri-butonu');
-            geriButonu.addEventListener('click', function() {
-                sepetMenu.style.right = '-500px';
+            const geriButonu =$("#geri-butonu");
+            geriButonu.on('click', function() {
+                sepetMenu.css("right","-500px");
             });
 
             var carouselSlides = $('.jquery_list');
