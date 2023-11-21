@@ -6,7 +6,7 @@
     script.app = {
         coutdown: function(){
             // Getting formated date from date string
-            let deadline = new Date("nov 12, 2023 12:00:00").getTime();
+            let deadline = new Date("nov 12, 2028 12:00:00").getTime();
   
           // Calling defined function at certain interval
           let x = setInterval(function () {
@@ -214,7 +214,6 @@
 
             alisverisButonu.on('click', function() {
                 sepetMenu.css("right","0px");
-                alert("basildi");
             });
 
             const geriButonu =$("#geri-butonu");
